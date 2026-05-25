@@ -1,0 +1,1 @@
+"""TipFusion AI — Core Package"""
