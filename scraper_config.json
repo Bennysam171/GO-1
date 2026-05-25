@@ -1,0 +1,23 @@
+{
+  "_comment": "Set any scraper to false to disable it.",
+  "apis": {
+    "api_football": false,
+    "odds_api": true,
+    "sportsgameodds": false,
+    "oods_api": false
+  },
+  "web": {
+    "forebet": false,
+    "predictz": false,
+    "soccervista": false,
+    "windrawwin": false
+  },
+  "social": {
+    "telegram": false,
+    "twitter": false,
+    "reddit": false
+  },
+  "android": {
+    "bluestacks": true
+  }
+}
