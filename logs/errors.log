@@ -1,0 +1,156 @@
+2026-05-12 20:30:09.318 | ERROR    | scrapers.web.prediction_sites:scrape:41 - [Predictz] error: 0, message='', url=URL('https://www.predictz.com/predictions/')
+2026-05-12 20:30:10.104 | ERROR    | scrapers.web.prediction_sites:scrape:132 - [SoccerVista] error: 0, message='', url=URL('https://www.soccervista.com/')
+2026-05-12 20:30:11.293 | ERROR    | scrapers.web.prediction_sites:scrape:212 - [Windrawwin] error: 0, message='', url=URL('https://windrawwin.com/predictions/today/')
+2026-05-12 20:30:15.019 | ERROR    | scrapers.web.forebet:scrape:35 - [Forebet] scrape error: 0, message='', url=URL('https://www.forebet.com/en/football-predictions')
+2026-05-12 20:36:45.474 | ERROR    | scrapers.web.forebet:scrape:35 - [Forebet] scrape error: 0, message='', url=URL('https://www.forebet.com/en/football-predictions')
+2026-05-12 20:36:46.429 | ERROR    | scrapers.web.prediction_sites:scrape:41 - [Predictz] error: 0, message='', url=URL('https://www.predictz.com/predictions/')
+2026-05-12 20:36:47.696 | ERROR    | scrapers.web.prediction_sites:scrape:132 - [SoccerVista] error: 0, message='', url=URL('https://www.soccervista.com/')
+2026-05-12 20:36:52.034 | ERROR    | scrapers.web.prediction_sites:scrape:212 - [Windrawwin] error: 0, message='', url=URL('https://windrawwin.com/predictions/today/')
+2026-05-12 22:00:16.084 | ERROR    | scrapers.web.prediction_sites:scrape:212 - [Windrawwin] error: 0, message='', url=URL('https://windrawwin.com/predictions/today/')
+2026-05-12 22:00:16.657 | ERROR    | scrapers.web.forebet:scrape:35 - [Forebet] scrape error: 0, message='', url=URL('https://www.forebet.com/en/football-predictions')
+2026-05-12 22:00:17.877 | ERROR    | scrapers.web.prediction_sites:scrape:41 - [Predictz] error: 0, message='', url=URL('https://www.predictz.com/predictions/')
+2026-05-12 22:00:18.072 | ERROR    | scrapers.web.prediction_sites:scrape:132 - [SoccerVista] error: 0, message='', url=URL('https://www.soccervista.com/')
+2026-05-15 07:18:11.607 | ERROR    | scrapers.web.forebet:scrape:35 - [Forebet] scrape error: 0, message='', url=URL('https://www.forebet.com/en/football-predictions')
+2026-05-15 07:18:12.919 | ERROR    | scrapers.web.prediction_sites:scrape:212 - [Windrawwin] error: 0, message='', url=URL('https://windrawwin.com/predictions/today/')
+2026-05-15 07:18:13.471 | ERROR    | scrapers.web.prediction_sites:scrape:41 - [Predictz] error: 0, message='', url=URL('https://www.predictz.com/predictions/')
+2026-05-15 07:18:16.284 | ERROR    | scrapers.web.prediction_sites:scrape:132 - [SoccerVista] error: 0, message='', url=URL('https://www.soccervista.com/')
+2026-05-15 07:44:25.894 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 15 seconds
+2026-05-15 07:44:28.091 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 13 seconds
+2026-05-15 07:44:30.324 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:44:32.500 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 9 seconds
+2026-05-15 07:44:39.506 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:45:28.137 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 14 seconds
+2026-05-15 07:45:30.329 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 12 seconds
+2026-05-15 07:45:31.849 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 10 seconds
+2026-05-15 07:45:32.562 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 10 seconds
+2026-05-15 07:45:38.851 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:45:39.862 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:46:08.542 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 34 seconds
+2026-05-15 07:46:10.084 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 32 seconds
+2026-05-15 07:46:10.725 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 31 seconds
+2026-05-15 07:46:12.315 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 30 seconds
+2026-05-15 07:46:12.879 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 29 seconds
+2026-05-15 07:46:14.509 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 28 seconds
+2026-05-15 07:46:15.067 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 27 seconds
+2026-05-15 07:46:16.725 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 25 seconds
+2026-05-15 07:46:17.246 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 25 seconds
+2026-05-15 07:46:19.513 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 23 seconds
+2026-05-15 07:46:19.749 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 22 seconds
+2026-05-15 07:46:21.711 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 20 seconds
+2026-05-15 07:46:21.950 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 20 seconds
+2026-05-15 07:46:23.933 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 18 seconds
+2026-05-15 07:46:24.137 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 18 seconds
+2026-05-15 07:46:26.123 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 16 seconds
+2026-05-15 07:46:26.294 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 16 seconds
+2026-05-15 07:46:28.298 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 14 seconds
+2026-05-15 07:46:28.815 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 13 seconds
+2026-05-15 07:46:30.504 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 12 seconds
+2026-05-15 07:46:31.080 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:46:32.714 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 9 seconds
+2026-05-15 07:46:33.296 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 9 seconds
+2026-05-15 07:46:39.721 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:46:40.627 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:47:12.174 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 33 seconds
+2026-05-15 07:47:12.281 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 33 seconds
+2026-05-15 07:47:14.330 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 31 seconds
+2026-05-15 07:47:14.464 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 31 seconds
+2026-05-15 07:47:16.652 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 28 seconds
+2026-05-15 07:47:17.166 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 28 seconds
+2026-05-15 07:47:18.864 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 26 seconds
+2026-05-15 07:47:19.338 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 26 seconds
+2026-05-15 07:47:21.038 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 24 seconds
+2026-05-15 07:47:21.582 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 24 seconds
+2026-05-15 07:47:23.241 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 22 seconds
+2026-05-15 07:47:23.772 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 21 seconds
+2026-05-15 07:47:25.448 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 20 seconds
+2026-05-15 07:47:25.972 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 19 seconds
+2026-05-15 07:47:27.688 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 17 seconds
+2026-05-15 07:47:28.332 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 17 seconds
+2026-05-15 07:47:29.859 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 15 seconds
+2026-05-15 07:47:30.507 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 15 seconds
+2026-05-15 07:47:32.036 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 13 seconds
+2026-05-15 07:47:32.698 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 12 seconds
+2026-05-15 07:47:34.218 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:47:34.877 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 10 seconds
+2026-05-15 07:47:36.454 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 9 seconds
+2026-05-15 07:47:41.889 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:47:43.773 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:48:11.202 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 34 seconds
+2026-05-15 07:48:13.925 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 31 seconds
+2026-05-15 07:48:14.000 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 31 seconds
+2026-05-15 07:48:16.125 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 29 seconds
+2026-05-15 07:48:16.172 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 29 seconds
+2026-05-15 07:48:18.299 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 27 seconds
+2026-05-15 07:48:18.370 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 27 seconds
+2026-05-15 07:48:20.508 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 25 seconds
+2026-05-15 07:48:21.411 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 24 seconds
+2026-05-15 07:48:22.714 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 22 seconds
+2026-05-15 07:48:23.686 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 21 seconds
+2026-05-15 07:48:24.985 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 20 seconds
+2026-05-15 07:48:26.857 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 18 seconds
+2026-05-15 07:48:27.202 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 18 seconds
+2026-05-15 07:48:29.121 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 16 seconds
+2026-05-15 07:48:29.483 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 16 seconds
+2026-05-15 07:48:32.170 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 13 seconds
+2026-05-15 07:48:32.308 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 13 seconds
+2026-05-15 07:48:34.452 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:48:34.578 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:48:41.442 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:48:41.575 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:49:15.007 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:49:15.140 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:49:22.013 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:49:22.131 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:49:29.015 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:49:29.152 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:49:35.011 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 13 seconds
+2026-05-15 07:49:37.289 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:49:37.290 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:49:44.293 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:49:44.294 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:50:16.411 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 35 seconds
+2026-05-15 07:50:18.692 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 32 seconds
+2026-05-15 07:50:19.530 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 32 seconds
+2026-05-15 07:50:20.974 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 30 seconds
+2026-05-15 07:50:21.944 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 29 seconds
+2026-05-15 07:50:24.965 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 27 seconds
+2026-05-15 07:50:25.919 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 25 seconds
+2026-05-15 07:50:27.588 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 24 seconds
+2026-05-15 07:50:28.349 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 23 seconds
+2026-05-15 07:50:30.692 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 20 seconds
+2026-05-15 07:50:30.825 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 20 seconds
+2026-05-15 07:50:32.974 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 18 seconds
+2026-05-15 07:50:34.553 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 17 seconds
+2026-05-15 07:50:35.271 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 16 seconds
+2026-05-15 07:50:37.453 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 14 seconds
+2026-05-15 07:50:37.900 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 13 seconds
+2026-05-15 07:50:39.697 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:50:40.175 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:50:41.968 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 9 seconds
+2026-05-15 07:50:42.456 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 9 seconds
+2026-05-15 07:50:48.969 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:50:49.975 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Timed out
+2026-05-15 07:51:14.012 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 37 seconds
+2026-05-15 07:51:14.645 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 36 seconds
+2026-05-15 07:51:16.293 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 35 seconds
+2026-05-15 07:51:16.892 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 34 seconds
+2026-05-15 07:51:18.477 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 33 seconds
+2026-05-15 07:51:19.171 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 32 seconds
+2026-05-15 07:51:20.730 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 30 seconds
+2026-05-15 07:51:21.451 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 30 seconds
+2026-05-15 07:51:23.013 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 28 seconds
+2026-05-15 07:51:23.742 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 27 seconds
+2026-05-15 07:51:25.302 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 26 seconds
+2026-05-15 07:51:25.939 | ERROR    | telegram_bot.bot:send_message:123 - [TelegramBot] Send failed: Flood control exceeded. Retry in 25 seconds
+2026-05-15 21:32:10.722 | ERROR    | android.bluestacks:connect:107 - ❌ [ADB] Connection failed: * daemon not running; starting now at tcp:5037
+* daemon started successfully
+2026-05-16 08:57:14.250 | ERROR    | android.bluestacks:connect:118 - ❌ [ADB] Connection failed: * daemon not running; starting now at tcp:5037
+* daemon started successfully
+2026-05-16 15:20:27.209 | ERROR    | android.bluestacks:connect:118 - ❌ [ADB] Connection failed: * daemon not running; starting now at tcp:5037
+* daemon started successfully
+2026-05-17 08:43:58.006 | ERROR    | android.bluestacks:connect:100 - ❌ [ADB] Connection failed: * daemon not running; starting now at tcp:5037
+* daemon started successfully
+2026-05-18 20:59:33.530 | ERROR    | android.bluestacks:connect:100 - ❌ [ADB] Connection failed: * daemon not running; starting now at tcp:5037
+* daemon started successfully
+2026-05-21 08:30:22.270 | ERROR    | android.bluestacks:connect:100 - ❌ [ADB] Connection failed: * daemon not running; starting now at tcp:5037
+* daemon started successfully

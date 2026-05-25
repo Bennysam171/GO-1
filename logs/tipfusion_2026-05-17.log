@@ -1,0 +1,128 @@
+2026-05-17 08:43:31 | INFO     | api.app:50 — 🚀 TipFusion AI starting up...
+2026-05-17 08:43:31 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-17 08:43:32 | INFO     | telegram_bot.bot:139 — ✅ [TelegramBot] Ready — channel -1003954198931
+2026-05-17 08:43:32 | INFO     | core.scheduler:98 — 📅 [Scheduler] All jobs registered
+2026-05-17 08:43:32 | SUCCESS  | core.scheduler:198 — ✅ [Scheduler] Started — all jobs active
+2026-05-17 08:43:32 | SUCCESS  | api.app:72 — ✅ TipFusion AI is live!
+2026-05-17 08:43:32 | INFO     | core.orchestrator:303 — ==================================================
+2026-05-17 08:43:32 | INFO     | core.orchestrator:304 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-17 08:43:32 | INFO     | core.orchestrator:305 — ==================================================
+2026-05-17 08:43:32 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ api_football (apis) is DISABLED in scraper_config.json
+2026-05-17 08:43:32 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ sportsgameodds (apis) is DISABLED in scraper_config.json
+2026-05-17 08:43:32 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ forebet (web) is DISABLED in scraper_config.json
+2026-05-17 08:43:32 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ predictz (web) is DISABLED in scraper_config.json
+2026-05-17 08:43:32 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ soccervista (web) is DISABLED in scraper_config.json
+2026-05-17 08:43:32 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ windrawwin (web) is DISABLED in scraper_config.json
+2026-05-17 08:43:32 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ telegram (social) is DISABLED in scraper_config.json
+2026-05-17 08:43:32 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ twitter (social) is DISABLED in scraper_config.json
+2026-05-17 08:43:32 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ reddit (social) is DISABLED in scraper_config.json
+2026-05-17 08:43:32 | INFO     | core.orchestrator:139 — 🚀 [Orchestrator] Running 1 API/web + 0 social scrapers
+2026-05-17 08:43:32 | INFO     | core.orchestrator:148 —    ⏸  [apis] api_football — DISABLED
+2026-05-17 08:43:32 | INFO     | core.orchestrator:148 —    ⏸  [apis] sportsgameodds — DISABLED
+2026-05-17 08:43:32 | INFO     | core.orchestrator:148 —    ⏸  [apis] oods_api — DISABLED
+2026-05-17 08:43:32 | INFO     | core.orchestrator:148 —    ⏸  [web] forebet — DISABLED
+2026-05-17 08:43:32 | INFO     | core.orchestrator:148 —    ⏸  [web] predictz — DISABLED
+2026-05-17 08:43:32 | INFO     | core.orchestrator:148 —    ⏸  [web] soccervista — DISABLED
+2026-05-17 08:43:32 | INFO     | core.orchestrator:148 —    ⏸  [web] windrawwin — DISABLED
+2026-05-17 08:43:32 | INFO     | core.orchestrator:148 —    ⏸  [social] telegram — DISABLED
+2026-05-17 08:43:32 | INFO     | core.orchestrator:148 —    ⏸  [social] twitter — DISABLED
+2026-05-17 08:43:32 | INFO     | core.orchestrator:148 —    ⏸  [social] reddit — DISABLED
+2026-05-17 08:43:32 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-17 08:43:34 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_epl: 9 events
+2026-05-17 08:43:35 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_spain_la_liga: 10 events
+2026-05-17 08:43:36 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_germany_bundesliga: 0 events
+2026-05-17 08:43:38 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_italy_serie_a: 10 events
+2026-05-17 08:43:39 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_france_ligue_one: 9 events
+2026-05-17 08:43:40 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_champs_league: 1 events
+2026-05-17 08:43:41 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_europa_league: 1 events
+2026-05-17 08:43:42 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_africa_cup_of_nations: 0 events
+2026-05-17 08:43:42 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 48 tips in 10.0s
+2026-05-17 08:43:45 | INFO     | android.bluestacks:548 — 🤖 [BlueStacks] Starting Android scraping session...
+2026-05-17 08:43:45 | INFO     | android.bluestacks:490 — [BlueStacks] Launching: C:/Program Files/BlueStacks_nxt/HD-Player.exe
+2026-05-17 08:43:58 | ERROR    | android.bluestacks:100 — ❌ [ADB] Connection failed: * daemon not running; starting now at tcp:5037
+* daemon started successfully
+2026-05-17 08:44:01 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-17 08:44:04 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-17 08:44:07 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-17 08:44:10 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-17 08:44:10 | SUCCESS  | android.bluestacks:497 — ✅ [BlueStacks] Android booted and ADB connected
+2026-05-17 08:44:12 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-17 08:44:15 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping TipsPro AI...
+2026-05-17 08:44:17 | DEBUG    | android.bluestacks:118 — [ADB] Launched com.tipspro
+2026-05-17 08:44:32 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-17 08:44:50 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-17 08:44:57 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 2: 0 tips
+2026-05-17 08:45:02 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 3: 7 tips
+2026-05-17 08:45:07 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 4: 6 tips
+2026-05-17 08:45:08 | SUCCESS  | android.bluestacks:397 — ✅ [Android] TipsPro AI: 13 tips scraped
+2026-05-17 08:45:11 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping AI Betting Tips...
+2026-05-17 08:45:11 | DEBUG    | android.bluestacks:118 — [ADB] Launched com.blockdelve.aibettingtips
+2026-05-17 08:45:16 | DEBUG    | android.bluestacks:387 — [Android] AI Betting Tips scroll 0: 0 tips
+2026-05-17 08:45:21 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-17 08:45:27 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-17 08:45:37 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-17 08:45:42 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-17 08:45:44 | SUCCESS  | android.bluestacks:397 — ✅ [Android] AI Betting Tips: 0 tips scraped
+2026-05-17 08:45:45 | DEBUG    | android.bluestacks:463 — [BlueStacks] Long pause 2.7s
+2026-05-17 08:45:49 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping Betting Tips AI Prediction...
+2026-05-17 08:45:49 | WARNING  | android.bluestacks:120 — [ADB] Launch failed com.azazasport.ai1: args: [-p, com.azazasport.ai1, -c, android.intent.category.LAUNCHER, 1]
+ arg: "-p"
+ arg: "com.azazasport.ai1"
+ arg: "-c"
+ arg: "android.intent.category.LAUNCHER"
+ arg: "1"
+data="com.azazasport.ai1"
+data="android.intent.category.LAUNCHER"
+2026-05-17 08:45:49 | WARNING  | android.bluestacks:366 — [Android] Could not launch Betting Tips AI Prediction
+2026-05-17 08:45:52 | SUCCESS  | android.bluestacks:543 — ✅ [BlueStacks] Total from all apps: 13 tips
+2026-05-17 08:45:52 | SUCCESS  | core.orchestrator:173 — ✅ [Orchestrator] Total tips collected: 61
+2026-05-17 08:45:52 | INFO     | database.crud:47 — 📡 New source registered: App:TipsPro AI [SourceType.ANDROID_APP]
+2026-05-17 08:45:52 | INFO     | core.orchestrator:233 — 💾 [Orchestrator] Stored 12 new tips
+2026-05-17 08:45:52 | INFO     | analyzer.engine:440 — 🧠 [Analysis] Processing 61 tips...
+2026-05-17 08:45:52 | DEBUG    | analyzer.engine:443 — [Analysis] Grouped into 44 unique matches
+2026-05-17 08:45:52 | SUCCESS  | analyzer.engine:454 — ✅ [Analysis] 44/44 matches passed threshold (min=45%)
+2026-05-17 08:45:52 | INFO     | core.orchestrator:283 — 💾 [Orchestrator] Saved 36 fusion predictions
+2026-05-17 08:45:52 | INFO     | telegram_bot.bot:223 — 📤 [TelegramBot] Broadcasting 36 predictions + slips...
+2026-05-17 08:45:53 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 1/36: juventus vs fiorentina (82.9%)
+2026-05-17 08:45:54 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 2/36: pisa vs napoli (81.8%)
+2026-05-17 08:45:55 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 3/36: as roma vs lazio (77.9%)
+2026-05-17 08:45:56 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 4/36: paris fc vs paris saint germain (76.0%)
+2026-05-17 08:45:59 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 5/36: manchester united vs nottingham forest (75.5%)
+2026-05-17 08:46:00 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 6/36: marseille vs rennes (74.7%)
+2026-05-17 08:46:01 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 7/36: barcelona vs real betis (74.3%)
+2026-05-17 08:46:02 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 8/36: como vs parma (74.2%)
+2026-05-17 08:46:03 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 9/36: genoa vs milan (73.7%)
+2026-05-17 08:46:06 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 10/36: nice vs metz (73.5%)
+2026-05-17 08:46:08 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 11/36: brentford vs crystal palace (73.4%)
+2026-05-17 08:46:09 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 12/36: arsenal vs burnley (73.4%)
+2026-05-17 08:46:10 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 13/36: atalanta bc vs bologna (73.4%)
+2026-05-17 08:46:10 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 14/36: lille vs auxerre (73.4%)
+2026-05-17 08:46:14 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 15/36: atlético madrid vs girona (73.2%)
+2026-05-17 08:46:15 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 16/36: lyon vs rc lens (73.2%)
+2026-05-17 08:46:16 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 17/36: rayo vallecano vs villarreal (73.1%)
+2026-05-17 08:46:16 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 18/36: internazionale vs hellas verona (72.9%)
+2026-05-17 08:46:17 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 19/36: sevilla vs real madrid (72.6%)
+2026-05-17 08:46:18 | WARNING  | telegram_bot.bot:157 — [TelegramBot] Flood — waiting 35s
+2026-05-17 08:46:54 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 20/36: brest vs angers (71.2%)
+2026-05-17 08:46:55 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 21/36: everton vs sunderland (70.9%)
+2026-05-17 08:46:55 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 22/36: wolverhampton wanderers vs fulham (70.1%)
+2026-05-17 08:46:56 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 23/36: oviedo vs alavés (68.9%)
+2026-05-17 08:46:58 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 24/36: leeds united vs brighton and hove albion (67.0%)
+2026-05-17 08:47:01 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 25/36: levante vs mallorca (66.9%)
+2026-05-17 08:47:02 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 26/36: strasbourg vs as monaco (66.9%)
+2026-05-17 08:47:03 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 27/36: ca osasuna vs espanyol (66.6%)
+2026-05-17 08:47:04 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 28/36: real sociedad vs valencia (66.1%)
+2026-05-17 08:47:04 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 29/36: newcastle united vs west ham united (65.9%)
+2026-05-17 08:47:08 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 30/36: athletic bilbao vs celta vigo (65.9%)
+2026-05-17 08:47:09 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 31/36: elche cf vs getafe (65.0%)
+2026-05-17 08:47:10 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 32/36: cagliari vs torino (64.8%)
+2026-05-17 08:47:10 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 33/36: udinese vs cremonese (63.4%)
+2026-05-17 08:47:11 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 34/36: nantes vs toulouse (62.2%)
+2026-05-17 08:47:15 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 35/36: lorient vs le havre (61.8%)
+2026-05-17 08:47:15 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 36/36: sassuolo vs lecce (61.2%)
+2026-05-17 08:47:16 | INFO     | telegram_bot.slip_builder:190 — [SlipBuilder] LOW RISK: 10 games, combined odds 295.17
+2026-05-17 08:47:16 | INFO     | telegram_bot.slip_builder:190 — [SlipBuilder] HIGH RISK: 14 games, combined odds 199589.55
+2026-05-17 08:47:18 | SUCCESS  | telegram_bot.bot:279 — ✅ [SlipBuilder] LOW RISK: 10 games, odds 295.17
+2026-05-17 08:47:20 | SUCCESS  | telegram_bot.bot:295 — ✅ [SlipBuilder] HIGH RISK: 14 games, odds 199589.55
+2026-05-17 08:47:20 | SUCCESS  | telegram_bot.bot:306 — ✅ [TelegramBot] Full broadcast done — 36 tips + 2 slips posted
+2026-05-17 08:47:20 | SUCCESS  | core.orchestrator:328 — ✅ Pipeline done in 227.8s — 61 tips → 44 predictions → 36 posted

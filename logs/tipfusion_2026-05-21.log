@@ -1,0 +1,523 @@
+2026-05-21 08:29:55 | INFO     | api.app:50 — 🚀 TipFusion AI starting up...
+2026-05-21 08:29:55 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-21 08:29:55 | INFO     | telegram_bot.bot:146 — ✅ [TelegramBot] Ready — channel -1003954198931
+2026-05-21 08:29:55 | INFO     | core.scheduler:107 — 📅 [Scheduler] All jobs registered
+2026-05-21 08:29:55 | SUCCESS  | core.scheduler:217 — ✅ [Scheduler] Started — all jobs active
+2026-05-21 08:29:55 | SUCCESS  | api.app:72 — ✅ TipFusion AI is live!
+2026-05-21 08:29:55 | INFO     | core.orchestrator:303 — ==================================================
+2026-05-21 08:29:55 | INFO     | core.orchestrator:304 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-21 08:29:55 | INFO     | core.orchestrator:305 — ==================================================
+2026-05-21 08:29:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ api_football (apis) is DISABLED in scraper_config.json
+2026-05-21 08:29:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ sportsgameodds (apis) is DISABLED in scraper_config.json
+2026-05-21 08:29:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ forebet (web) is DISABLED in scraper_config.json
+2026-05-21 08:29:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ predictz (web) is DISABLED in scraper_config.json
+2026-05-21 08:29:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ soccervista (web) is DISABLED in scraper_config.json
+2026-05-21 08:29:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ windrawwin (web) is DISABLED in scraper_config.json
+2026-05-21 08:29:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ telegram (social) is DISABLED in scraper_config.json
+2026-05-21 08:29:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ twitter (social) is DISABLED in scraper_config.json
+2026-05-21 08:29:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ reddit (social) is DISABLED in scraper_config.json
+2026-05-21 08:29:55 | INFO     | core.orchestrator:139 — 🚀 [Orchestrator] Running 1 API/web + 0 social scrapers
+2026-05-21 08:29:55 | INFO     | core.orchestrator:148 —    ⏸  [apis] api_football — DISABLED
+2026-05-21 08:29:55 | INFO     | core.orchestrator:148 —    ⏸  [apis] sportsgameodds — DISABLED
+2026-05-21 08:29:55 | INFO     | core.orchestrator:148 —    ⏸  [apis] oods_api — DISABLED
+2026-05-21 08:29:55 | INFO     | core.orchestrator:148 —    ⏸  [web] forebet — DISABLED
+2026-05-21 08:29:55 | INFO     | core.orchestrator:148 —    ⏸  [web] predictz — DISABLED
+2026-05-21 08:29:55 | INFO     | core.orchestrator:148 —    ⏸  [web] soccervista — DISABLED
+2026-05-21 08:29:55 | INFO     | core.orchestrator:148 —    ⏸  [web] windrawwin — DISABLED
+2026-05-21 08:29:55 | INFO     | core.orchestrator:148 —    ⏸  [social] telegram — DISABLED
+2026-05-21 08:29:55 | INFO     | core.orchestrator:148 —    ⏸  [social] twitter — DISABLED
+2026-05-21 08:29:55 | INFO     | core.orchestrator:148 —    ⏸  [social] reddit — DISABLED
+2026-05-21 08:29:55 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-21 08:29:57 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_epl: 10 events
+2026-05-21 08:29:59 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_spain_la_liga: 10 events
+2026-05-21 08:30:00 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_germany_bundesliga: 1 events
+2026-05-21 08:30:01 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_italy_serie_a: 10 events
+2026-05-21 08:30:03 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_france_ligue_one: 1 events
+2026-05-21 08:30:04 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_champs_league: 1 events
+2026-05-21 08:30:05 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_europa_league: 0 events
+2026-05-21 08:30:06 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_africa_cup_of_nations: 0 events
+2026-05-21 08:30:06 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 3 tips in 10.9s
+2026-05-21 08:30:09 | INFO     | android.bluestacks:548 — 🤖 [BlueStacks] Starting Android scraping session...
+2026-05-21 08:30:09 | INFO     | android.bluestacks:490 — [BlueStacks] Launching: C:/Program Files/BlueStacks_nxt/HD-Player.exe
+2026-05-21 08:30:22 | ERROR    | android.bluestacks:100 — ❌ [ADB] Connection failed: * daemon not running; starting now at tcp:5037
+* daemon started successfully
+2026-05-21 08:30:25 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 08:30:28 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 08:30:31 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 08:30:34 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 08:30:34 | SUCCESS  | android.bluestacks:497 — ✅ [BlueStacks] Android booted and ADB connected
+2026-05-21 08:30:36 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 08:30:39 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping TipsPro AI...
+2026-05-21 08:30:40 | DEBUG    | android.bluestacks:118 — [ADB] Launched com.tipspro
+2026-05-21 08:30:48 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:30:53 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 1: 0 tips
+2026-05-21 08:30:59 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:31:10 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:31:15 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 4: 0 tips
+2026-05-21 08:31:17 | SUCCESS  | android.bluestacks:397 — ✅ [Android] TipsPro AI: 0 tips scraped
+2026-05-21 08:31:19 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping AI Betting Tips...
+2026-05-21 08:31:20 | DEBUG    | android.bluestacks:118 — [ADB] Launched com.blockdelve.aibettingtips
+2026-05-21 08:31:27 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:31:34 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:31:40 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:31:45 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:31:51 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:31:52 | SUCCESS  | android.bluestacks:397 — ✅ [Android] AI Betting Tips: 0 tips scraped
+2026-05-21 08:31:55 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping Betting Tips AI Prediction...
+2026-05-21 08:31:55 | WARNING  | android.bluestacks:120 — [ADB] Launch failed com.azazasport.ai1: args: [-p, com.azazasport.ai1, -c, android.intent.category.LAUNCHER, 1]
+ arg: "-p"
+ arg: "com.azazasport.ai1"
+ arg: "-c"
+ arg: "android.intent.category.LAUNCHER"
+ arg: "1"
+data="com.azazasport.ai1"
+data="android.intent.category.LAUNCHER"
+2026-05-21 08:31:55 | WARNING  | android.bluestacks:366 — [Android] Could not launch Betting Tips AI Prediction
+2026-05-21 08:31:57 | DEBUG    | android.bluestacks:463 — [BlueStacks] Long pause 3.8s
+2026-05-21 08:32:02 | SUCCESS  | android.bluestacks:543 — ✅ [BlueStacks] Total from all apps: 0 tips
+2026-05-21 08:32:02 | SUCCESS  | core.orchestrator:173 — ✅ [Orchestrator] Total tips collected: 3
+2026-05-21 08:32:02 | INFO     | core.orchestrator:233 — 💾 [Orchestrator] Stored 3 new tips
+2026-05-21 08:32:02 | INFO     | analyzer.engine:440 — 🧠 [Analysis] Processing 3 tips...
+2026-05-21 08:32:02 | DEBUG    | analyzer.engine:443 — [Analysis] Grouped into 2 unique matches
+2026-05-21 08:32:02 | SUCCESS  | analyzer.engine:454 — ✅ [Analysis] 2/2 matches passed threshold (min=45%)
+2026-05-21 08:32:02 | INFO     | core.orchestrator:283 — 💾 [Orchestrator] Saved 2 fusion predictions
+2026-05-21 08:32:02 | INFO     | telegram_bot.bot:230 — 📤 [TelegramBot] Broadcasting 2 predictions + slips...
+2026-05-21 08:32:04 | INFO     | telegram_bot.bot:256 — [TelegramBot] ✅ 1/2: vfl wolfsburg vs sc paderborn (73.1%)
+2026-05-21 08:32:05 | INFO     | telegram_bot.bot:256 — [TelegramBot] ✅ 2/2: fiorentina vs atalanta bc (73.1%)
+2026-05-21 08:32:06 | INFO     | telegram_bot.slip_builder:270 — [SlipBuilder] Built 0/12 valid slips from 2 games
+2026-05-21 08:32:06 | INFO     | telegram_bot.bot:298 — [TelegramBot] No valid slips built
+2026-05-21 08:32:06 | SUCCESS  | telegram_bot.bot:300 — ✅ [TelegramBot] Broadcast done — 2 tips + 0 slips posted
+2026-05-21 08:32:06 | SUCCESS  | core.orchestrator:328 — ✅ Pipeline done in 130.4s — 3 tips → 2 predictions → 2 posted
+2026-05-21 08:32:54 | INFO     | api.app:76 — 🔻 TipFusion AI shutting down...
+2026-05-21 08:32:54 | INFO     | core.scheduler:221 — [Scheduler] Stopped
+2026-05-21 08:32:54 | INFO     | api.app:81 — 👋 Shutdown complete
+2026-05-21 08:33:00 | INFO     | api.app:50 — 🚀 TipFusion AI starting up...
+2026-05-21 08:33:00 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-21 08:33:01 | INFO     | telegram_bot.bot:146 — ✅ [TelegramBot] Ready — channel -1003954198931
+2026-05-21 08:33:01 | INFO     | core.scheduler:107 — 📅 [Scheduler] All jobs registered
+2026-05-21 08:33:01 | SUCCESS  | core.scheduler:217 — ✅ [Scheduler] Started — all jobs active
+2026-05-21 08:33:01 | SUCCESS  | api.app:72 — ✅ TipFusion AI is live!
+2026-05-21 08:33:01 | INFO     | core.orchestrator:303 — ==================================================
+2026-05-21 08:33:01 | INFO     | core.orchestrator:304 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-21 08:33:01 | INFO     | core.orchestrator:305 — ==================================================
+2026-05-21 08:33:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ api_football (apis) is DISABLED in scraper_config.json
+2026-05-21 08:33:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ sportsgameodds (apis) is DISABLED in scraper_config.json
+2026-05-21 08:33:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ forebet (web) is DISABLED in scraper_config.json
+2026-05-21 08:33:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ predictz (web) is DISABLED in scraper_config.json
+2026-05-21 08:33:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ soccervista (web) is DISABLED in scraper_config.json
+2026-05-21 08:33:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ windrawwin (web) is DISABLED in scraper_config.json
+2026-05-21 08:33:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ telegram (social) is DISABLED in scraper_config.json
+2026-05-21 08:33:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ twitter (social) is DISABLED in scraper_config.json
+2026-05-21 08:33:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ reddit (social) is DISABLED in scraper_config.json
+2026-05-21 08:33:01 | INFO     | core.orchestrator:139 — 🚀 [Orchestrator] Running 1 API/web + 0 social scrapers
+2026-05-21 08:33:01 | INFO     | core.orchestrator:148 —    ⏸  [apis] api_football — DISABLED
+2026-05-21 08:33:01 | INFO     | core.orchestrator:148 —    ⏸  [apis] sportsgameodds — DISABLED
+2026-05-21 08:33:01 | INFO     | core.orchestrator:148 —    ⏸  [apis] oods_api — DISABLED
+2026-05-21 08:33:01 | INFO     | core.orchestrator:148 —    ⏸  [web] forebet — DISABLED
+2026-05-21 08:33:01 | INFO     | core.orchestrator:148 —    ⏸  [web] predictz — DISABLED
+2026-05-21 08:33:01 | INFO     | core.orchestrator:148 —    ⏸  [web] soccervista — DISABLED
+2026-05-21 08:33:01 | INFO     | core.orchestrator:148 —    ⏸  [web] windrawwin — DISABLED
+2026-05-21 08:33:01 | INFO     | core.orchestrator:148 —    ⏸  [social] telegram — DISABLED
+2026-05-21 08:33:01 | INFO     | core.orchestrator:148 —    ⏸  [social] twitter — DISABLED
+2026-05-21 08:33:01 | INFO     | core.orchestrator:148 —    ⏸  [social] reddit — DISABLED
+2026-05-21 08:33:01 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-21 08:33:03 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_epl: 10 events
+2026-05-21 08:33:05 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_spain_la_liga: 10 events
+2026-05-21 08:33:06 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_germany_bundesliga: 1 events
+2026-05-21 08:33:07 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_italy_serie_a: 10 events
+2026-05-21 08:33:09 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_france_ligue_one: 1 events
+2026-05-21 08:33:10 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_champs_league: 1 events
+2026-05-21 08:33:12 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_europa_league: 0 events
+2026-05-21 08:33:13 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_africa_cup_of_nations: 0 events
+2026-05-21 08:33:13 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 3 tips in 11.9s
+2026-05-21 08:33:14 | INFO     | android.bluestacks:548 — 🤖 [BlueStacks] Starting Android scraping session...
+2026-05-21 08:33:14 | INFO     | android.bluestacks:490 — [BlueStacks] Launching: C:/Program Files/BlueStacks_nxt/HD-Player.exe
+2026-05-21 08:33:14 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 08:33:14 | SUCCESS  | android.bluestacks:497 — ✅ [BlueStacks] Android booted and ADB connected
+2026-05-21 08:33:16 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 08:33:19 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping TipsPro AI...
+2026-05-21 08:33:19 | DEBUG    | android.bluestacks:118 — [ADB] Launched com.tipspro
+2026-05-21 08:33:26 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:33:35 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 1: 0 tips
+2026-05-21 08:33:39 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 2: 0 tips
+2026-05-21 08:33:44 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 3: 0 tips
+2026-05-21 08:33:48 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 4: 0 tips
+2026-05-21 08:33:49 | SUCCESS  | android.bluestacks:397 — ✅ [Android] TipsPro AI: 0 tips scraped
+2026-05-21 08:33:50 | DEBUG    | android.bluestacks:463 — [BlueStacks] Long pause 3.7s
+2026-05-21 08:33:55 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping AI Betting Tips...
+2026-05-21 08:33:56 | DEBUG    | android.bluestacks:118 — [ADB] Launched com.blockdelve.aibettingtips
+2026-05-21 08:34:00 | DEBUG    | android.bluestacks:387 — [Android] AI Betting Tips scroll 0: 0 tips
+2026-05-21 08:34:05 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:34:10 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:34:16 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:34:21 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:34:22 | SUCCESS  | android.bluestacks:397 — ✅ [Android] AI Betting Tips: 0 tips scraped
+2026-05-21 08:34:25 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping Betting Tips AI Prediction...
+2026-05-21 08:34:25 | WARNING  | android.bluestacks:120 — [ADB] Launch failed com.azazasport.ai1: args: [-p, com.azazasport.ai1, -c, android.intent.category.LAUNCHER, 1]
+ arg: "-p"
+ arg: "com.azazasport.ai1"
+ arg: "-c"
+ arg: "android.intent.category.LAUNCHER"
+ arg: "1"
+data="com.azazasport.ai1"
+data="android.intent.category.LAUNCHER"
+2026-05-21 08:34:25 | WARNING  | android.bluestacks:366 — [Android] Could not launch Betting Tips AI Prediction
+2026-05-21 08:34:28 | SUCCESS  | android.bluestacks:543 — ✅ [BlueStacks] Total from all apps: 0 tips
+2026-05-21 08:34:28 | SUCCESS  | core.orchestrator:173 — ✅ [Orchestrator] Total tips collected: 3
+2026-05-21 08:34:28 | INFO     | core.orchestrator:233 — 💾 [Orchestrator] Stored 0 new tips
+2026-05-21 08:34:28 | INFO     | analyzer.engine:440 — 🧠 [Analysis] Processing 3 tips...
+2026-05-21 08:34:28 | DEBUG    | analyzer.engine:443 — [Analysis] Grouped into 2 unique matches
+2026-05-21 08:34:28 | SUCCESS  | analyzer.engine:454 — ✅ [Analysis] 2/2 matches passed threshold (min=45%)
+2026-05-21 08:34:28 | INFO     | core.orchestrator:283 — 💾 [Orchestrator] Saved 2 fusion predictions
+2026-05-21 08:34:28 | INFO     | telegram_bot.bot:230 — 📤 [TelegramBot] Broadcasting 2 predictions + slips...
+2026-05-21 08:34:29 | INFO     | telegram_bot.bot:256 — [TelegramBot] ✅ 1/2: vfl wolfsburg vs sc paderborn (73.1%)
+2026-05-21 08:34:30 | INFO     | telegram_bot.bot:256 — [TelegramBot] ✅ 2/2: fiorentina vs atalanta bc (72.8%)
+2026-05-21 08:34:31 | INFO     | telegram_bot.slip_builder:270 — [SlipBuilder] Built 0/12 valid slips from 2 games
+2026-05-21 08:34:31 | INFO     | telegram_bot.bot:298 — [TelegramBot] No valid slips built
+2026-05-21 08:34:31 | SUCCESS  | telegram_bot.bot:300 — ✅ [TelegramBot] Broadcast done — 2 tips + 0 slips posted
+2026-05-21 08:34:31 | SUCCESS  | core.orchestrator:328 — ✅ Pipeline done in 89.4s — 3 tips → 2 predictions → 2 posted
+2026-05-21 08:51:31 | INFO     | api.app:76 — 🔻 TipFusion AI shutting down...
+2026-05-21 08:51:31 | INFO     | core.scheduler:221 — [Scheduler] Stopped
+2026-05-21 08:51:31 | INFO     | api.app:81 — 👋 Shutdown complete
+2026-05-21 08:51:41 | INFO     | api.app:50 — 🚀 TipFusion AI starting up...
+2026-05-21 08:51:41 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-21 08:51:41 | INFO     | telegram_bot.bot:146 — ✅ [TelegramBot] Ready — channel -1003954198931
+2026-05-21 08:51:41 | INFO     | core.scheduler:107 — 📅 [Scheduler] All jobs registered
+2026-05-21 08:51:41 | SUCCESS  | core.scheduler:217 — ✅ [Scheduler] Started — all jobs active
+2026-05-21 08:51:41 | SUCCESS  | api.app:72 — ✅ TipFusion AI is live!
+2026-05-21 08:51:41 | INFO     | core.orchestrator:303 — ==================================================
+2026-05-21 08:51:41 | INFO     | core.orchestrator:304 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-21 08:51:41 | INFO     | core.orchestrator:305 — ==================================================
+2026-05-21 08:51:41 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ api_football (apis) is DISABLED in scraper_config.json
+2026-05-21 08:51:41 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ sportsgameodds (apis) is DISABLED in scraper_config.json
+2026-05-21 08:51:41 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ forebet (web) is DISABLED in scraper_config.json
+2026-05-21 08:51:41 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ predictz (web) is DISABLED in scraper_config.json
+2026-05-21 08:51:41 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ soccervista (web) is DISABLED in scraper_config.json
+2026-05-21 08:51:41 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ windrawwin (web) is DISABLED in scraper_config.json
+2026-05-21 08:51:41 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ telegram (social) is DISABLED in scraper_config.json
+2026-05-21 08:51:41 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ twitter (social) is DISABLED in scraper_config.json
+2026-05-21 08:51:41 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ reddit (social) is DISABLED in scraper_config.json
+2026-05-21 08:51:41 | INFO     | core.orchestrator:139 — 🚀 [Orchestrator] Running 1 API/web + 0 social scrapers
+2026-05-21 08:51:41 | INFO     | core.orchestrator:148 —    ⏸  [apis] api_football — DISABLED
+2026-05-21 08:51:41 | INFO     | core.orchestrator:148 —    ⏸  [apis] sportsgameodds — DISABLED
+2026-05-21 08:51:41 | INFO     | core.orchestrator:148 —    ⏸  [apis] oods_api — DISABLED
+2026-05-21 08:51:41 | INFO     | core.orchestrator:148 —    ⏸  [web] forebet — DISABLED
+2026-05-21 08:51:41 | INFO     | core.orchestrator:148 —    ⏸  [web] predictz — DISABLED
+2026-05-21 08:51:41 | INFO     | core.orchestrator:148 —    ⏸  [web] soccervista — DISABLED
+2026-05-21 08:51:41 | INFO     | core.orchestrator:148 —    ⏸  [web] windrawwin — DISABLED
+2026-05-21 08:51:41 | INFO     | core.orchestrator:148 —    ⏸  [social] telegram — DISABLED
+2026-05-21 08:51:41 | INFO     | core.orchestrator:148 —    ⏸  [social] twitter — DISABLED
+2026-05-21 08:51:41 | INFO     | core.orchestrator:148 —    ⏸  [social] reddit — DISABLED
+2026-05-21 08:51:41 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-21 08:51:44 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_epl: 10 events
+2026-05-21 08:51:45 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_spain_la_liga: 10 events
+2026-05-21 08:51:47 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_germany_bundesliga: 1 events
+2026-05-21 08:51:48 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_italy_serie_a: 10 events
+2026-05-21 08:51:49 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_france_ligue_one: 1 events
+2026-05-21 08:51:50 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_champs_league: 1 events
+2026-05-21 08:51:52 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_europa_league: 0 events
+2026-05-21 08:51:53 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_africa_cup_of_nations: 0 events
+2026-05-21 08:51:53 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 3 tips in 12.0s
+2026-05-21 08:51:54 | INFO     | android.bluestacks:548 — 🤖 [BlueStacks] Starting Android scraping session...
+2026-05-21 08:51:54 | INFO     | android.bluestacks:490 — [BlueStacks] Launching: C:/Program Files/BlueStacks_nxt/HD-Player.exe
+2026-05-21 08:51:54 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 08:51:54 | SUCCESS  | android.bluestacks:497 — ✅ [BlueStacks] Android booted and ADB connected
+2026-05-21 08:51:56 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 08:51:59 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping TipsPro AI...
+2026-05-21 08:51:59 | DEBUG    | android.bluestacks:118 — [ADB] Launched com.tipspro
+2026-05-21 08:52:05 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:52:09 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 1: 0 tips
+2026-05-21 08:52:13 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 2: 0 tips
+2026-05-21 08:52:18 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 3: 10 tips
+2026-05-21 08:52:22 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 4: 7 tips
+2026-05-21 08:52:23 | SUCCESS  | android.bluestacks:397 — ✅ [Android] TipsPro AI: 17 tips scraped
+2026-05-21 08:52:25 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping AI Betting Tips...
+2026-05-21 08:52:25 | DEBUG    | android.bluestacks:118 — [ADB] Launched com.blockdelve.aibettingtips
+2026-05-21 08:52:30 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:52:36 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:52:42 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:52:47 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:52:52 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:52:53 | SUCCESS  | android.bluestacks:397 — ✅ [Android] AI Betting Tips: 0 tips scraped
+2026-05-21 08:52:56 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping Betting Tips AI Prediction...
+2026-05-21 08:52:56 | WARNING  | android.bluestacks:120 — [ADB] Launch failed com.azazasport.ai1: args: [-p, com.azazasport.ai1, -c, android.intent.category.LAUNCHER, 1]
+ arg: "-p"
+ arg: "com.azazasport.ai1"
+ arg: "-c"
+ arg: "android.intent.category.LAUNCHER"
+ arg: "1"
+data="com.azazasport.ai1"
+data="android.intent.category.LAUNCHER"
+2026-05-21 08:52:56 | WARNING  | android.bluestacks:366 — [Android] Could not launch Betting Tips AI Prediction
+2026-05-21 08:52:57 | DEBUG    | android.bluestacks:463 — [BlueStacks] Long pause 4.3s
+2026-05-21 08:53:03 | SUCCESS  | android.bluestacks:543 — ✅ [BlueStacks] Total from all apps: 17 tips
+2026-05-21 08:53:03 | SUCCESS  | core.orchestrator:173 — ✅ [Orchestrator] Total tips collected: 20
+2026-05-21 08:53:03 | INFO     | core.orchestrator:233 — 💾 [Orchestrator] Stored 9 new tips
+2026-05-21 08:53:03 | INFO     | analyzer.engine:440 — 🧠 [Analysis] Processing 20 tips...
+2026-05-21 08:53:03 | DEBUG    | analyzer.engine:443 — [Analysis] Grouped into 13 unique matches
+2026-05-21 08:53:03 | SUCCESS  | analyzer.engine:454 — ✅ [Analysis] 13/13 matches passed threshold (min=45%)
+2026-05-21 08:53:03 | INFO     | core.orchestrator:283 — 💾 [Orchestrator] Saved 2 fusion predictions
+2026-05-21 08:53:03 | INFO     | telegram_bot.bot:230 — 📤 [TelegramBot] Broadcasting 2 predictions + slips...
+2026-05-21 08:53:04 | INFO     | telegram_bot.bot:256 — [TelegramBot] ✅ 1/2: vfl wolfsburg vs sc paderborn (73.1%)
+2026-05-21 08:53:05 | INFO     | telegram_bot.bot:256 — [TelegramBot] ✅ 2/2: fiorentina vs atalanta bc (72.9%)
+2026-05-21 08:53:06 | INFO     | telegram_bot.slip_builder:270 — [SlipBuilder] Built 0/12 valid slips from 2 games
+2026-05-21 08:53:06 | INFO     | telegram_bot.bot:298 — [TelegramBot] No valid slips built
+2026-05-21 08:53:06 | SUCCESS  | telegram_bot.bot:300 — ✅ [TelegramBot] Broadcast done — 2 tips + 0 slips posted
+2026-05-21 08:53:06 | SUCCESS  | core.orchestrator:328 — ✅ Pipeline done in 84.3s — 20 tips → 13 predictions → 2 posted
+2026-05-21 08:55:23 | INFO     | api.app:76 — 🔻 TipFusion AI shutting down...
+2026-05-21 08:55:23 | INFO     | core.scheduler:221 — [Scheduler] Stopped
+2026-05-21 08:55:23 | INFO     | api.app:81 — 👋 Shutdown complete
+2026-05-21 08:55:28 | INFO     | api.app:50 — 🚀 TipFusion AI starting up...
+2026-05-21 08:55:28 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-21 08:55:28 | INFO     | telegram_bot.bot:146 — ✅ [TelegramBot] Ready — channel -1003954198931
+2026-05-21 08:55:28 | INFO     | core.scheduler:107 — 📅 [Scheduler] All jobs registered
+2026-05-21 08:55:28 | SUCCESS  | core.scheduler:217 — ✅ [Scheduler] Started — all jobs active
+2026-05-21 08:55:28 | SUCCESS  | api.app:72 — ✅ TipFusion AI is live!
+2026-05-21 08:55:28 | INFO     | core.orchestrator:303 — ==================================================
+2026-05-21 08:55:28 | INFO     | core.orchestrator:304 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-21 08:55:28 | INFO     | core.orchestrator:305 — ==================================================
+2026-05-21 08:55:28 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ api_football (apis) is DISABLED in scraper_config.json
+2026-05-21 08:55:28 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ sportsgameodds (apis) is DISABLED in scraper_config.json
+2026-05-21 08:55:28 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ forebet (web) is DISABLED in scraper_config.json
+2026-05-21 08:55:28 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ predictz (web) is DISABLED in scraper_config.json
+2026-05-21 08:55:28 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ soccervista (web) is DISABLED in scraper_config.json
+2026-05-21 08:55:28 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ windrawwin (web) is DISABLED in scraper_config.json
+2026-05-21 08:55:28 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ telegram (social) is DISABLED in scraper_config.json
+2026-05-21 08:55:28 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ twitter (social) is DISABLED in scraper_config.json
+2026-05-21 08:55:28 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ reddit (social) is DISABLED in scraper_config.json
+2026-05-21 08:55:28 | INFO     | core.orchestrator:139 — 🚀 [Orchestrator] Running 1 API/web + 0 social scrapers
+2026-05-21 08:55:28 | INFO     | core.orchestrator:148 —    ⏸  [apis] api_football — DISABLED
+2026-05-21 08:55:28 | INFO     | core.orchestrator:148 —    ⏸  [apis] sportsgameodds — DISABLED
+2026-05-21 08:55:28 | INFO     | core.orchestrator:148 —    ⏸  [apis] oods_api — DISABLED
+2026-05-21 08:55:28 | INFO     | core.orchestrator:148 —    ⏸  [web] forebet — DISABLED
+2026-05-21 08:55:28 | INFO     | core.orchestrator:148 —    ⏸  [web] predictz — DISABLED
+2026-05-21 08:55:28 | INFO     | core.orchestrator:148 —    ⏸  [web] soccervista — DISABLED
+2026-05-21 08:55:28 | INFO     | core.orchestrator:148 —    ⏸  [web] windrawwin — DISABLED
+2026-05-21 08:55:28 | INFO     | core.orchestrator:148 —    ⏸  [social] telegram — DISABLED
+2026-05-21 08:55:28 | INFO     | core.orchestrator:148 —    ⏸  [social] twitter — DISABLED
+2026-05-21 08:55:28 | INFO     | core.orchestrator:148 —    ⏸  [social] reddit — DISABLED
+2026-05-21 08:55:28 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-21 08:55:30 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_epl: 10 events
+2026-05-21 08:55:32 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_spain_la_liga: 10 events
+2026-05-21 08:55:33 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_germany_bundesliga: 1 events
+2026-05-21 08:55:35 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_italy_serie_a: 10 events
+2026-05-21 08:55:35 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_france_ligue_one: 1 events
+2026-05-21 08:55:36 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_champs_league: 1 events
+2026-05-21 08:55:38 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_europa_league: 0 events
+2026-05-21 08:55:39 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_africa_cup_of_nations: 0 events
+2026-05-21 08:55:39 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 3 tips in 10.8s
+2026-05-21 08:55:40 | INFO     | android.bluestacks:548 — 🤖 [BlueStacks] Starting Android scraping session...
+2026-05-21 08:55:40 | INFO     | android.bluestacks:490 — [BlueStacks] Launching: C:/Program Files/BlueStacks_nxt/HD-Player.exe
+2026-05-21 08:55:40 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 08:55:40 | SUCCESS  | android.bluestacks:497 — ✅ [BlueStacks] Android booted and ADB connected
+2026-05-21 08:55:42 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 08:55:45 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping TipsPro AI...
+2026-05-21 08:55:45 | DEBUG    | android.bluestacks:118 — [ADB] Launched com.tipspro
+2026-05-21 08:55:52 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:56:01 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 1: 0 tips
+2026-05-21 08:56:05 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 2: 0 tips
+2026-05-21 08:56:09 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 3: 0 tips
+2026-05-21 08:56:13 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 4: 0 tips
+2026-05-21 08:56:14 | SUCCESS  | android.bluestacks:397 — ✅ [Android] TipsPro AI: 0 tips scraped
+2026-05-21 08:56:16 | DEBUG    | android.bluestacks:463 — [BlueStacks] Long pause 4.2s
+2026-05-21 08:57:17 | INFO     | api.app:50 — 🚀 TipFusion AI starting up...
+2026-05-21 08:57:17 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-21 08:57:17 | INFO     | telegram_bot.bot:146 — ✅ [TelegramBot] Ready — channel -1003954198931
+2026-05-21 08:57:17 | INFO     | core.scheduler:107 — 📅 [Scheduler] All jobs registered
+2026-05-21 08:57:17 | SUCCESS  | core.scheduler:217 — ✅ [Scheduler] Started — all jobs active
+2026-05-21 08:57:17 | SUCCESS  | api.app:72 — ✅ TipFusion AI is live!
+2026-05-21 08:57:17 | INFO     | core.orchestrator:303 — ==================================================
+2026-05-21 08:57:17 | INFO     | core.orchestrator:304 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-21 08:57:17 | INFO     | core.orchestrator:305 — ==================================================
+2026-05-21 08:57:17 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ api_football (apis) is DISABLED in scraper_config.json
+2026-05-21 08:57:17 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ sportsgameodds (apis) is DISABLED in scraper_config.json
+2026-05-21 08:57:17 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ forebet (web) is DISABLED in scraper_config.json
+2026-05-21 08:57:17 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ predictz (web) is DISABLED in scraper_config.json
+2026-05-21 08:57:17 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ soccervista (web) is DISABLED in scraper_config.json
+2026-05-21 08:57:17 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ windrawwin (web) is DISABLED in scraper_config.json
+2026-05-21 08:57:17 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ telegram (social) is DISABLED in scraper_config.json
+2026-05-21 08:57:17 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ twitter (social) is DISABLED in scraper_config.json
+2026-05-21 08:57:17 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ reddit (social) is DISABLED in scraper_config.json
+2026-05-21 08:57:17 | INFO     | core.orchestrator:139 — 🚀 [Orchestrator] Running 1 API/web + 0 social scrapers
+2026-05-21 08:57:17 | INFO     | core.orchestrator:148 —    ⏸  [apis] api_football — DISABLED
+2026-05-21 08:57:17 | INFO     | core.orchestrator:148 —    ⏸  [apis] sportsgameodds — DISABLED
+2026-05-21 08:57:17 | INFO     | core.orchestrator:148 —    ⏸  [apis] oods_api — DISABLED
+2026-05-21 08:57:17 | INFO     | core.orchestrator:148 —    ⏸  [web] forebet — DISABLED
+2026-05-21 08:57:17 | INFO     | core.orchestrator:148 —    ⏸  [web] predictz — DISABLED
+2026-05-21 08:57:17 | INFO     | core.orchestrator:148 —    ⏸  [web] soccervista — DISABLED
+2026-05-21 08:57:17 | INFO     | core.orchestrator:148 —    ⏸  [web] windrawwin — DISABLED
+2026-05-21 08:57:17 | INFO     | core.orchestrator:148 —    ⏸  [social] telegram — DISABLED
+2026-05-21 08:57:17 | INFO     | core.orchestrator:148 —    ⏸  [social] twitter — DISABLED
+2026-05-21 08:57:17 | INFO     | core.orchestrator:148 —    ⏸  [social] reddit — DISABLED
+2026-05-21 08:57:17 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-21 08:57:19 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_epl: 10 events
+2026-05-21 08:57:20 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_spain_la_liga: 10 events
+2026-05-21 08:57:21 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_germany_bundesliga: 1 events
+2026-05-21 08:57:23 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_italy_serie_a: 10 events
+2026-05-21 08:57:24 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_france_ligue_one: 1 events
+2026-05-21 08:57:25 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_champs_league: 1 events
+2026-05-21 08:57:26 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_europa_league: 0 events
+2026-05-21 08:57:28 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_africa_cup_of_nations: 0 events
+2026-05-21 08:57:28 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 3 tips in 10.3s
+2026-05-21 08:57:29 | INFO     | android.bluestacks:548 — 🤖 [BlueStacks] Starting Android scraping session...
+2026-05-21 08:57:29 | INFO     | android.bluestacks:490 — [BlueStacks] Launching: C:/Program Files/BlueStacks_nxt/HD-Player.exe
+2026-05-21 08:57:29 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 08:57:29 | SUCCESS  | android.bluestacks:497 — ✅ [BlueStacks] Android booted and ADB connected
+2026-05-21 08:57:31 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 08:57:34 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping TipsPro AI...
+2026-05-21 08:57:34 | DEBUG    | android.bluestacks:118 — [ADB] Launched com.tipspro
+2026-05-21 08:57:44 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:57:54 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:57:59 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 2: 3 tips
+2026-05-21 08:58:03 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 3: 7 tips
+2026-05-21 08:58:08 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 4: 2 tips
+2026-05-21 08:58:09 | SUCCESS  | android.bluestacks:397 — ✅ [Android] TipsPro AI: 12 tips scraped
+2026-05-21 08:58:11 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping AI Betting Tips...
+2026-05-21 08:58:11 | DEBUG    | android.bluestacks:118 — [ADB] Launched com.blockdelve.aibettingtips
+2026-05-21 08:58:15 | DEBUG    | android.bluestacks:387 — [Android] AI Betting Tips scroll 0: 0 tips
+2026-05-21 08:58:20 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:58:27 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:58:32 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:58:37 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 08:58:38 | SUCCESS  | android.bluestacks:397 — ✅ [Android] AI Betting Tips: 0 tips scraped
+2026-05-21 08:58:40 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping Betting Tips AI Prediction...
+2026-05-21 08:58:41 | WARNING  | android.bluestacks:120 — [ADB] Launch failed com.azazasport.ai1: args: [-p, com.azazasport.ai1, -c, android.intent.category.LAUNCHER, 1]
+ arg: "-p"
+ arg: "com.azazasport.ai1"
+ arg: "-c"
+ arg: "android.intent.category.LAUNCHER"
+ arg: "1"
+data="com.azazasport.ai1"
+data="android.intent.category.LAUNCHER"
+2026-05-21 08:58:41 | WARNING  | android.bluestacks:366 — [Android] Could not launch Betting Tips AI Prediction
+2026-05-21 08:58:44 | SUCCESS  | android.bluestacks:543 — ✅ [BlueStacks] Total from all apps: 12 tips
+2026-05-21 08:58:44 | SUCCESS  | core.orchestrator:173 — ✅ [Orchestrator] Total tips collected: 15
+2026-05-21 08:58:44 | INFO     | core.orchestrator:233 — 💾 [Orchestrator] Stored 4 new tips
+2026-05-21 08:58:44 | INFO     | analyzer.engine:440 — 🧠 [Analysis] Processing 15 tips...
+2026-05-21 08:58:44 | DEBUG    | analyzer.engine:443 — [Analysis] Grouped into 14 unique matches
+2026-05-21 08:58:44 | SUCCESS  | analyzer.engine:454 — ✅ [Analysis] 14/14 matches passed threshold (min=45%)
+2026-05-21 08:58:44 | INFO     | core.orchestrator:283 — 💾 [Orchestrator] Saved 2 fusion predictions
+2026-05-21 08:58:44 | INFO     | telegram_bot.bot:230 — 📤 [TelegramBot] Broadcasting 2 predictions + slips...
+2026-05-21 08:58:45 | INFO     | telegram_bot.bot:256 — [TelegramBot] ✅ 1/2: vfl wolfsburg vs sc paderborn (73.1%)
+2026-05-21 08:58:47 | INFO     | telegram_bot.bot:256 — [TelegramBot] ✅ 2/2: fiorentina vs atalanta bc (72.9%)
+2026-05-21 08:58:47 | INFO     | telegram_bot.slip_builder:270 — [SlipBuilder] Built 0/12 valid slips from 2 games
+2026-05-21 08:58:47 | INFO     | telegram_bot.bot:298 — [TelegramBot] No valid slips built
+2026-05-21 08:58:47 | SUCCESS  | telegram_bot.bot:300 — ✅ [TelegramBot] Broadcast done — 2 tips + 0 slips posted
+2026-05-21 08:58:47 | SUCCESS  | core.orchestrator:328 — ✅ Pipeline done in 89.6s — 15 tips → 14 predictions → 2 posted
+2026-05-21 09:22:16 | INFO     | api.app:76 — 🔻 TipFusion AI shutting down...
+2026-05-21 09:22:16 | INFO     | core.scheduler:221 — [Scheduler] Stopped
+2026-05-21 09:22:16 | INFO     | api.app:81 — 👋 Shutdown complete
+2026-05-21 09:22:22 | INFO     | api.app:50 — 🚀 TipFusion AI starting up...
+2026-05-21 09:22:22 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-21 09:22:23 | INFO     | telegram_bot.bot:146 — ✅ [TelegramBot] Ready — channel -1003954198931
+2026-05-21 09:22:23 | INFO     | core.scheduler:107 — 📅 [Scheduler] All jobs registered
+2026-05-21 09:22:23 | SUCCESS  | core.scheduler:217 — ✅ [Scheduler] Started — all jobs active
+2026-05-21 09:22:23 | SUCCESS  | api.app:72 — ✅ TipFusion AI is live!
+2026-05-21 09:22:23 | INFO     | core.orchestrator:303 — ==================================================
+2026-05-21 09:22:23 | INFO     | core.orchestrator:304 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-21 09:22:23 | INFO     | core.orchestrator:305 — ==================================================
+2026-05-21 09:22:23 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ api_football (apis) is DISABLED in scraper_config.json
+2026-05-21 09:22:23 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ sportsgameodds (apis) is DISABLED in scraper_config.json
+2026-05-21 09:22:23 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ forebet (web) is DISABLED in scraper_config.json
+2026-05-21 09:22:23 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ predictz (web) is DISABLED in scraper_config.json
+2026-05-21 09:22:23 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ soccervista (web) is DISABLED in scraper_config.json
+2026-05-21 09:22:23 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ windrawwin (web) is DISABLED in scraper_config.json
+2026-05-21 09:22:23 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ telegram (social) is DISABLED in scraper_config.json
+2026-05-21 09:22:23 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ twitter (social) is DISABLED in scraper_config.json
+2026-05-21 09:22:23 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ reddit (social) is DISABLED in scraper_config.json
+2026-05-21 09:22:23 | INFO     | core.orchestrator:139 — 🚀 [Orchestrator] Running 1 API/web + 0 social scrapers
+2026-05-21 09:22:23 | INFO     | core.orchestrator:148 —    ⏸  [apis] api_football — DISABLED
+2026-05-21 09:22:23 | INFO     | core.orchestrator:148 —    ⏸  [apis] sportsgameodds — DISABLED
+2026-05-21 09:22:23 | INFO     | core.orchestrator:148 —    ⏸  [apis] oods_api — DISABLED
+2026-05-21 09:22:23 | INFO     | core.orchestrator:148 —    ⏸  [web] forebet — DISABLED
+2026-05-21 09:22:23 | INFO     | core.orchestrator:148 —    ⏸  [web] predictz — DISABLED
+2026-05-21 09:22:23 | INFO     | core.orchestrator:148 —    ⏸  [web] soccervista — DISABLED
+2026-05-21 09:22:23 | INFO     | core.orchestrator:148 —    ⏸  [web] windrawwin — DISABLED
+2026-05-21 09:22:23 | INFO     | core.orchestrator:148 —    ⏸  [social] telegram — DISABLED
+2026-05-21 09:22:23 | INFO     | core.orchestrator:148 —    ⏸  [social] twitter — DISABLED
+2026-05-21 09:22:23 | INFO     | core.orchestrator:148 —    ⏸  [social] reddit — DISABLED
+2026-05-21 09:22:23 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-21 09:22:26 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_epl: 10 events
+2026-05-21 09:22:28 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_spain_la_liga: 10 events
+2026-05-21 09:22:28 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_germany_bundesliga: 1 events
+2026-05-21 09:22:29 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_italy_serie_a: 10 events
+2026-05-21 09:22:31 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_france_ligue_one: 1 events
+2026-05-21 09:22:32 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_champs_league: 1 events
+2026-05-21 09:22:33 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_europa_league: 0 events
+2026-05-21 09:22:35 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_africa_cup_of_nations: 0 events
+2026-05-21 09:22:35 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 3 tips in 11.6s
+2026-05-21 09:22:49 | INFO     | android.bluestacks:548 — 🤖 [BlueStacks] Starting Android scraping session...
+2026-05-21 09:22:49 | INFO     | android.bluestacks:490 — [BlueStacks] Launching: C:/Program Files/BlueStacks_nxt/HD-Player.exe
+2026-05-21 09:22:49 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 09:22:49 | SUCCESS  | android.bluestacks:497 — ✅ [BlueStacks] Android booted and ADB connected
+2026-05-21 09:22:51 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 09:22:54 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping TipsPro AI...
+2026-05-21 09:22:54 | DEBUG    | android.bluestacks:118 — [ADB] Launched com.tipspro
+2026-05-21 09:22:59 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 0: 5 tips
+2026-05-21 09:23:03 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 1: 2 tips
+2026-05-21 09:23:07 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 2: 5 tips
+2026-05-21 09:23:11 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 3: 5 tips
+2026-05-21 09:23:15 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 4: 5 tips
+2026-05-21 09:23:16 | SUCCESS  | android.bluestacks:397 — ✅ [Android] TipsPro AI: 22 tips scraped
+2026-05-21 09:23:20 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping AI Betting Tips...
+2026-05-21 09:23:20 | WARNING  | android.bluestacks:120 — [ADB] Launch failed com.blockdelve.aibettingtips: 
+2026-05-21 09:23:20 | WARNING  | android.bluestacks:366 — [Android] Could not launch AI Betting Tips
+2026-05-21 09:25:02 | INFO     | api.app:50 — 🚀 TipFusion AI starting up...
+2026-05-21 09:25:02 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-21 09:25:03 | INFO     | telegram_bot.bot:146 — ✅ [TelegramBot] Ready — channel -1003954198931
+2026-05-21 09:25:03 | INFO     | core.scheduler:107 — 📅 [Scheduler] All jobs registered
+2026-05-21 09:25:03 | SUCCESS  | core.scheduler:217 — ✅ [Scheduler] Started — all jobs active
+2026-05-21 09:25:03 | SUCCESS  | api.app:72 — ✅ TipFusion AI is live!
+2026-05-21 09:25:03 | INFO     | core.orchestrator:303 — ==================================================
+2026-05-21 09:25:03 | INFO     | core.orchestrator:304 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-21 09:25:03 | INFO     | core.orchestrator:305 — ==================================================
+2026-05-21 09:25:03 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ api_football (apis) is DISABLED in scraper_config.json
+2026-05-21 09:25:03 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ sportsgameodds (apis) is DISABLED in scraper_config.json
+2026-05-21 09:25:03 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ forebet (web) is DISABLED in scraper_config.json
+2026-05-21 09:25:03 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ predictz (web) is DISABLED in scraper_config.json
+2026-05-21 09:25:03 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ soccervista (web) is DISABLED in scraper_config.json
+2026-05-21 09:25:03 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ windrawwin (web) is DISABLED in scraper_config.json
+2026-05-21 09:25:03 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ telegram (social) is DISABLED in scraper_config.json
+2026-05-21 09:25:03 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ twitter (social) is DISABLED in scraper_config.json
+2026-05-21 09:25:03 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ reddit (social) is DISABLED in scraper_config.json
+2026-05-21 09:25:03 | INFO     | core.orchestrator:139 — 🚀 [Orchestrator] Running 1 API/web + 0 social scrapers
+2026-05-21 09:25:03 | INFO     | core.orchestrator:148 —    ⏸  [apis] api_football — DISABLED
+2026-05-21 09:25:03 | INFO     | core.orchestrator:148 —    ⏸  [apis] sportsgameodds — DISABLED
+2026-05-21 09:25:03 | INFO     | core.orchestrator:148 —    ⏸  [apis] oods_api — DISABLED
+2026-05-21 09:25:03 | INFO     | core.orchestrator:148 —    ⏸  [web] forebet — DISABLED
+2026-05-21 09:25:03 | INFO     | core.orchestrator:148 —    ⏸  [web] predictz — DISABLED
+2026-05-21 09:25:03 | INFO     | core.orchestrator:148 —    ⏸  [web] soccervista — DISABLED
+2026-05-21 09:25:03 | INFO     | core.orchestrator:148 —    ⏸  [web] windrawwin — DISABLED
+2026-05-21 09:25:03 | INFO     | core.orchestrator:148 —    ⏸  [social] telegram — DISABLED
+2026-05-21 09:25:03 | INFO     | core.orchestrator:148 —    ⏸  [social] twitter — DISABLED
+2026-05-21 09:25:03 | INFO     | core.orchestrator:148 —    ⏸  [social] reddit — DISABLED
+2026-05-21 09:25:03 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-21 09:25:04 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_epl: 10 events
+2026-05-21 09:25:06 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_spain_la_liga: 10 events
+2026-05-21 09:25:07 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_germany_bundesliga: 1 events
+2026-05-21 09:25:09 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_italy_serie_a: 10 events
+2026-05-21 09:25:10 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_france_ligue_one: 1 events
+2026-05-21 09:25:11 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_champs_league: 1 events
+2026-05-21 09:25:12 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_europa_league: 0 events
+2026-05-21 09:25:14 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_africa_cup_of_nations: 0 events
+2026-05-21 09:25:14 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 3 tips in 11.2s
+2026-05-21 09:25:15 | INFO     | android.bluestacks:548 — 🤖 [BlueStacks] Starting Android scraping session...
+2026-05-21 09:25:15 | INFO     | android.bluestacks:490 — [BlueStacks] Launching: C:/Program Files/BlueStacks_nxt/HD-Player.exe
+2026-05-21 09:25:15 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 09:25:15 | SUCCESS  | android.bluestacks:497 — ✅ [BlueStacks] Android booted and ADB connected
+2026-05-21 09:25:17 | INFO     | android.bluestacks:98 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-21 09:25:20 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping TipsPro AI...
+2026-05-21 09:25:23 | DEBUG    | android.bluestacks:118 — [ADB] Launched com.tipspro
+2026-05-21 09:25:27 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 0: 5 tips
+2026-05-21 09:25:40 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 09:25:44 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 2: 0 tips
+2026-05-21 09:25:48 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 3: 0 tips
+2026-05-21 09:25:52 | DEBUG    | android.bluestacks:387 — [Android] TipsPro AI scroll 4: 0 tips
+2026-05-21 09:25:53 | SUCCESS  | android.bluestacks:397 — ✅ [Android] TipsPro AI: 5 tips scraped
+2026-05-21 09:25:55 | DEBUG    | android.bluestacks:463 — [BlueStacks] Long pause 5.2s
+2026-05-21 09:26:02 | INFO     | android.bluestacks:361 — 📱 [Android] Scraping AI Betting Tips...
+2026-05-21 09:26:02 | DEBUG    | android.bluestacks:118 — [ADB] Launched com.blockdelve.aibettingtips
+2026-05-21 09:26:06 | DEBUG    | android.bluestacks:387 — [Android] AI Betting Tips scroll 0: 0 tips
+2026-05-21 09:26:12 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 09:26:18 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-05-21 09:26:28 | WARNING  | android.bluestacks:219 — [OCR] Extract failed: tesseract is not installed or it's not in your PATH. See README file for more information.

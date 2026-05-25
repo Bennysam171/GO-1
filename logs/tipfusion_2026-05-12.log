@@ -1,0 +1,365 @@
+2026-05-12 20:27:37 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-12 20:29:50 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-12 20:29:50 | INFO     | core.orchestrator:351 — ==================================================
+2026-05-12 20:29:50 | INFO     | core.orchestrator:352 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-12 20:29:50 | INFO     | core.orchestrator:353 — ==================================================
+2026-05-12 20:29:53 | INFO     | core.orchestrator:149 — 🚀 [Orchestrator] Running 9 scrapers...
+2026-05-12 20:29:53 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-12 20:29:53 | INFO     | scrapers.base:186 — 🔍 [SportsGameOdds] Starting scrape...
+2026-05-12 20:29:53 | INFO     | scrapers.base:186 — 🔍 [API-Football] Starting scrape...
+2026-05-12 20:29:53 | INFO     | scrapers.base:186 — 🔍 [Forebet] Starting scrape...
+2026-05-12 20:29:53 | INFO     | scrapers.base:186 — 🔍 [Predictz] Starting scrape...
+2026-05-12 20:29:53 | INFO     | scrapers.base:186 — 🔍 [SoccerVista] Starting scrape...
+2026-05-12 20:29:53 | INFO     | scrapers.base:186 — 🔍 [Windrawwin] Starting scrape...
+2026-05-12 20:30:09 | WARNING  | scrapers.apis.sportsgameodds:48 — [SGO] SOCCER fetch error: 400, message='Bad Request', url=URL('https://api.sportsgameodds.com/v2/events?sport=SOCCER&status=upcoming&limit=50')
+2026-05-12 20:30:09 | DEBUG    | scrapers.apis.sportsgameodds:174 — [SGO] SOCCER: 0 events fetched
+2026-05-12 20:30:09 | SUCCESS  | scrapers.base:190 — ✅ [SportsGameOdds] Found 0 tips in 15.6s
+2026-05-12 20:30:09 | ERROR    | scrapers.web.prediction_sites:41 — [Predictz] error: 0, message='', url=URL('https://www.predictz.com/predictions/')
+2026-05-12 20:30:09 | SUCCESS  | scrapers.base:190 — ✅ [Predictz] Found 0 tips in 15.6s
+2026-05-12 20:30:10 | ERROR    | scrapers.web.prediction_sites:132 — [SoccerVista] error: 0, message='', url=URL('https://www.soccervista.com/')
+2026-05-12 20:30:10 | SUCCESS  | scrapers.base:190 — ✅ [SoccerVista] Found 0 tips in 16.4s
+2026-05-12 20:30:11 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_epl fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_epl/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 20:30:11 | ERROR    | scrapers.web.prediction_sites:212 — [Windrawwin] error: 0, message='', url=URL('https://windrawwin.com/predictions/today/')
+2026-05-12 20:30:11 | SUCCESS  | scrapers.base:190 — ✅ [Windrawwin] Found 0 tips in 17.6s
+2026-05-12 20:30:15 | ERROR    | scrapers.web.forebet:35 — [Forebet] scrape error: 0, message='', url=URL('https://www.forebet.com/en/football-predictions')
+2026-05-12 20:30:15 | SUCCESS  | scrapers.base:190 — ✅ [Forebet] Found 0 tips in 21.3s
+2026-05-12 20:30:26 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_spain_la_liga fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_spain_la_liga/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 20:30:39 | INFO     | scrapers.apis.api_football:227 — [API-Football] ⚽ 11 football tips
+2026-05-12 20:30:41 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_germany_bundesliga fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_germany_bundesliga/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 20:30:43 | INFO     | scrapers.apis.api_football:231 — [API-NBA] 🏀 0 NBA tips
+2026-05-12 20:30:47 | INFO     | scrapers.apis.api_football:235 — [API-Basketball] 🏀 51 basketball tips
+2026-05-12 20:30:52 | INFO     | scrapers.apis.api_football:239 — [API-Baseball] ⚾ 48 baseball tips
+2026-05-12 20:30:52 | SUCCESS  | scrapers.base:190 — ✅ [API-Football] Found 110 tips in 59.2s
+2026-05-12 20:30:56 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_italy_serie_a fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_italy_serie_a/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 20:31:11 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_france_ligue_one fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_france_ligue_one/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 20:31:26 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_uefa_champs_league fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_uefa_champs_league/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 20:31:43 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_uefa_europa_league fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_uefa_europa_league/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 20:31:59 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_africa_cup_of_nations fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_africa_cup_of_nations/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 20:31:59 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 0 tips in 125.8s
+2026-05-12 20:31:59 | INFO     | scrapers.social.telegram_scraper:227 — 🔍 [Telegram] Scraping 20 channels...
+2026-05-12 20:34:12 | INFO     | scrapers.social.telegram_scraper:94 — ✅ [Telegram] Client connected
+2026-05-12 20:34:13 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel bettingtipsfree error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:34:16 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] football_predictions: 0 tips found
+2026-05-12 20:34:18 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel vipbettingtips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:34:20 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel correctscoretips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:34:23 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel oddsmarket error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:34:25 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel sureoddstips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:34:28 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] valuebetting: 0 tips found
+2026-05-12 20:34:30 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel overunder_tips error: No user has "overunder_tips" as username
+2026-05-12 20:34:33 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] btts_tips: 0 tips found
+2026-05-12 20:34:35 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel accumulatortips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:34:38 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] premiumtipsdaily: 0 tips found
+2026-05-12 20:34:41 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel surebetsdaily error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:34:43 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] smartbetai: 0 tips found
+2026-05-12 20:34:45 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel databettingtips error: No user has "databettingtips" as username
+2026-05-12 20:34:48 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel predictzchannel error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:35:04 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel footballtips365 error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:35:07 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] sportpicksdaily: 0 tips found
+2026-05-12 20:35:09 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel bettingexpert_tips error: No user has "bettingexpert_tips" as username
+2026-05-12 20:35:12 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel oddscomparison error: No user has "oddscomparison" as username
+2026-05-12 20:35:14 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel fixedpredictions error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:35:16 | SUCCESS  | scrapers.social.telegram_scraper:229 — ✅ [Telegram] Total tips: 0
+2026-05-12 20:35:16 | INFO     | scrapers.social.social_scrapers:302 — 🔍 [Twitter] Scanning 22 accounts...
+2026-05-12 20:35:25 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @PinchBet error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:26 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @AndyRobsonTips error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:26 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @WSTipster error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:26 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @MarkOHaire error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:26 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @BettingExpert error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:27 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @FootyAccums error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:27 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @Oddschecker error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:27 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @SmartBettingClub error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:28 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @TheRealTipster error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:28 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @BettingTips4You error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:29 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @CorrectScorePro error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:30 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @VIPBettingTips error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:30 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @FootballValue error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:30 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @AccaTracker error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:31 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @InfogolApp error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:31 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @OddsJam error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:31 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @RebelBetting error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:31 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @TrademateSports error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:32 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @FootballTipsHub error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:32 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @AccaBet error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:32 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @BetAdvisor error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:33 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @TipsterHQ error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:35:33 | SUCCESS  | scrapers.social.social_scrapers:304 — ✅ [Twitter] Found 0 tips
+2026-05-12 20:35:34 | WARNING  | core.orchestrator:177 — [Orchestrator] Android scraping skipped: cannot import name '_imaging' from 'PIL' (C:\Users\Black\Desktop\tipfusion_ai_ultimate\venv\Lib\site-packages\PIL\__init__.py)
+2026-05-12 20:35:34 | SUCCESS  | core.orchestrator:179 — ✅ [Orchestrator] Total raw tips collected: 110
+2026-05-12 20:35:34 | INFO     | database.crud:47 — 📡 New source registered: API-Football [SourceType.API]
+2026-05-12 20:35:34 | INFO     | database.crud:47 — 📡 New source registered: API-Basketball [SourceType.WEB]
+2026-05-12 20:35:34 | INFO     | database.crud:47 — 📡 New source registered: API-Baseball [SourceType.WEB]
+2026-05-12 20:35:35 | INFO     | core.orchestrator:255 — 💾 [Orchestrator] Stored 110 new tips to DB
+2026-05-12 20:35:35 | INFO     | analyzer.engine:440 — 🧠 [Analysis] Processing 110 tips...
+2026-05-12 20:35:35 | DEBUG    | analyzer.engine:443 — [Analysis] Grouped into 110 unique matches
+2026-05-12 20:35:35 | SUCCESS  | analyzer.engine:454 — ✅ [Analysis] 0/110 matches passed threshold (min=65%)
+2026-05-12 20:35:35 | INFO     | core.orchestrator:368 — [Orchestrator] No high-confidence predictions found this run
+2026-05-12 20:36:28 | INFO     | api.app:50 — 🚀 TipFusion AI starting up...
+2026-05-12 20:36:28 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-12 20:36:30 | INFO     | telegram_bot.bot:108 — ✅ [TelegramBot] Ready — channel -1003954198931
+2026-05-12 20:36:30 | INFO     | core.scheduler:98 — 📅 [Scheduler] All jobs registered
+2026-05-12 20:36:30 | SUCCESS  | core.scheduler:198 — ✅ [Scheduler] Started — all jobs active
+2026-05-12 20:36:30 | SUCCESS  | api.app:72 — ✅ TipFusion AI is live!
+2026-05-12 20:36:30 | INFO     | core.orchestrator:351 — ==================================================
+2026-05-12 20:36:30 | INFO     | core.orchestrator:352 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-12 20:36:30 | INFO     | core.orchestrator:353 — ==================================================
+2026-05-12 20:36:30 | INFO     | core.orchestrator:149 — 🚀 [Orchestrator] Running 9 scrapers...
+2026-05-12 20:36:30 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-12 20:36:30 | INFO     | scrapers.base:186 — 🔍 [SportsGameOdds] Starting scrape...
+2026-05-12 20:36:30 | INFO     | scrapers.base:186 — 🔍 [API-Football] Starting scrape...
+2026-05-12 20:36:30 | INFO     | scrapers.base:186 — 🔍 [Forebet] Starting scrape...
+2026-05-12 20:36:30 | INFO     | scrapers.base:186 — 🔍 [Predictz] Starting scrape...
+2026-05-12 20:36:30 | INFO     | scrapers.base:186 — 🔍 [SoccerVista] Starting scrape...
+2026-05-12 20:36:30 | INFO     | scrapers.base:186 — 🔍 [Windrawwin] Starting scrape...
+2026-05-12 20:36:45 | ERROR    | scrapers.web.forebet:35 — [Forebet] scrape error: 0, message='', url=URL('https://www.forebet.com/en/football-predictions')
+2026-05-12 20:36:45 | SUCCESS  | scrapers.base:190 — ✅ [Forebet] Found 0 tips in 15.1s
+2026-05-12 20:36:46 | WARNING  | scrapers.apis.sportsgameodds:48 — [SGO] SOCCER fetch error: 400, message='Bad Request', url=URL('https://api.sportsgameodds.com/v2/events?sport=SOCCER&status=upcoming&limit=50')
+2026-05-12 20:36:46 | DEBUG    | scrapers.apis.sportsgameodds:174 — [SGO] SOCCER: 0 events fetched
+2026-05-12 20:36:46 | SUCCESS  | scrapers.base:190 — ✅ [SportsGameOdds] Found 0 tips in 16.1s
+2026-05-12 20:36:46 | ERROR    | scrapers.web.prediction_sites:41 — [Predictz] error: 0, message='', url=URL('https://www.predictz.com/predictions/')
+2026-05-12 20:36:46 | SUCCESS  | scrapers.base:190 — ✅ [Predictz] Found 0 tips in 16.1s
+2026-05-12 20:36:47 | ERROR    | scrapers.web.prediction_sites:132 — [SoccerVista] error: 0, message='', url=URL('https://www.soccervista.com/')
+2026-05-12 20:36:47 | SUCCESS  | scrapers.base:190 — ✅ [SoccerVista] Found 0 tips in 17.4s
+2026-05-12 20:36:49 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_epl fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_epl/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 20:36:52 | ERROR    | scrapers.web.prediction_sites:212 — [Windrawwin] error: 0, message='', url=URL('https://windrawwin.com/predictions/today/')
+2026-05-12 20:36:52 | SUCCESS  | scrapers.base:190 — ✅ [Windrawwin] Found 0 tips in 21.7s
+2026-05-12 20:37:04 | WARNING  | scrapers.apis.api_football:56 — [API-Football] predictions error fx=1391172: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1391172')
+2026-05-12 20:37:04 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_spain_la_liga fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_spain_la_liga/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 20:37:20 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_germany_bundesliga fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_germany_bundesliga/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 20:37:36 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_italy_serie_a fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_italy_serie_a/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 20:37:42 | WARNING  | scrapers.apis.api_football:56 — [API-Football] predictions error fx=1490286: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1490286')
+2026-05-12 20:37:52 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_france_ligue_one fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_france_ligue_one/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 20:37:56 | INFO     | scrapers.apis.api_football:227 — [API-Football] ⚽ 18 football tips
+2026-05-12 20:38:02 | INFO     | scrapers.apis.api_football:231 — [API-NBA] 🏀 0 NBA tips
+2026-05-12 20:38:05 | INFO     | scrapers.apis.api_football:235 — [API-Basketball] 🏀 51 basketball tips
+2026-05-12 20:38:07 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_uefa_champs_league fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_uefa_champs_league/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 20:38:10 | INFO     | scrapers.apis.api_football:239 — [API-Baseball] ⚾ 48 baseball tips
+2026-05-12 20:38:10 | SUCCESS  | scrapers.base:190 — ✅ [API-Football] Found 117 tips in 100.1s
+2026-05-12 20:38:23 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_uefa_europa_league fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_uefa_europa_league/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 20:38:37 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_africa_cup_of_nations fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_africa_cup_of_nations/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 20:38:37 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 0 tips in 126.9s
+2026-05-12 20:38:37 | INFO     | scrapers.social.telegram_scraper:227 — 🔍 [Telegram] Scraping 20 channels...
+2026-05-12 20:38:42 | INFO     | scrapers.social.telegram_scraper:94 — ✅ [Telegram] Client connected
+2026-05-12 20:38:42 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel bettingtipsfree error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:38:45 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] football_predictions: 0 tips found
+2026-05-12 20:38:47 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel vipbettingtips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:38:49 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel correctscoretips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:38:52 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel oddsmarket error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:38:58 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel sureoddstips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:39:00 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] valuebetting: 0 tips found
+2026-05-12 20:39:03 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel overunder_tips error: No user has "overunder_tips" as username
+2026-05-12 20:39:05 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] btts_tips: 0 tips found
+2026-05-12 20:39:07 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel accumulatortips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:39:10 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] premiumtipsdaily: 0 tips found
+2026-05-12 20:39:12 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel surebetsdaily error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:39:15 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] smartbetai: 0 tips found
+2026-05-12 20:39:17 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel databettingtips error: No user has "databettingtips" as username
+2026-05-12 20:39:19 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel predictzchannel error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:39:22 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel footballtips365 error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:39:24 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] sportpicksdaily: 0 tips found
+2026-05-12 20:39:26 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel bettingexpert_tips error: No user has "bettingexpert_tips" as username
+2026-05-12 20:39:29 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel oddscomparison error: No user has "oddscomparison" as username
+2026-05-12 20:39:31 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel fixedpredictions error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 20:39:33 | SUCCESS  | scrapers.social.telegram_scraper:229 — ✅ [Telegram] Total tips: 0
+2026-05-12 20:39:33 | INFO     | scrapers.social.social_scrapers:302 — 🔍 [Twitter] Scanning 22 accounts...
+2026-05-12 20:39:39 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @PinchBet error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:39 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @AndyRobsonTips error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:39 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @WSTipster error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:40 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @MarkOHaire error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:41 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @BettingExpert error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:41 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @FootyAccums error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:41 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @Oddschecker error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:42 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @SmartBettingClub error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:42 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @TheRealTipster error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:43 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @BettingTips4You error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:43 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @CorrectScorePro error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:43 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @VIPBettingTips error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:44 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @FootballValue error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:44 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @AccaTracker error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:44 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @InfogolApp error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:45 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @OddsJam error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:45 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @RebelBetting error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:46 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @TrademateSports error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:46 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @FootballTipsHub error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:46 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @AccaBet error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:47 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @BetAdvisor error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:47 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @TipsterHQ error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 20:39:47 | SUCCESS  | scrapers.social.social_scrapers:304 — ✅ [Twitter] Found 0 tips
+2026-05-12 20:39:48 | WARNING  | core.orchestrator:177 — [Orchestrator] Android scraping skipped: cannot import name '_imaging' from 'PIL' (C:\Users\Black\Desktop\tipfusion_ai_ultimate\venv\Lib\site-packages\PIL\__init__.py)
+2026-05-12 20:39:48 | SUCCESS  | core.orchestrator:179 — ✅ [Orchestrator] Total raw tips collected: 117
+2026-05-12 20:39:49 | INFO     | core.orchestrator:255 — 💾 [Orchestrator] Stored 8 new tips to DB
+2026-05-12 20:39:49 | INFO     | analyzer.engine:440 — 🧠 [Analysis] Processing 117 tips...
+2026-05-12 20:39:49 | DEBUG    | analyzer.engine:443 — [Analysis] Grouped into 117 unique matches
+2026-05-12 20:39:49 | SUCCESS  | analyzer.engine:454 — ✅ [Analysis] 0/117 matches passed threshold (min=65%)
+2026-05-12 20:39:49 | INFO     | core.orchestrator:368 — [Orchestrator] No high-confidence predictions found this run
+2026-05-12 20:41:30 | DEBUG    | core.scheduler:126 — [Scheduler] Autonomous: nothing to post — idle
+2026-05-12 20:46:30 | DEBUG    | core.scheduler:126 — [Scheduler] Autonomous: nothing to post — idle
+2026-05-12 20:51:30 | DEBUG    | core.scheduler:126 — [Scheduler] Autonomous: nothing to post — idle
+2026-05-12 21:31:30 | DEBUG    | core.scheduler:126 — [Scheduler] Autonomous: nothing to post — idle
+2026-05-12 21:36:30 | DEBUG    | core.scheduler:126 — [Scheduler] Autonomous: nothing to post — idle
+2026-05-12 21:41:30 | DEBUG    | core.scheduler:126 — [Scheduler] Autonomous: nothing to post — idle
+2026-05-12 21:46:30 | DEBUG    | core.scheduler:126 — [Scheduler] Autonomous: nothing to post — idle
+2026-05-12 21:51:30 | DEBUG    | core.scheduler:126 — [Scheduler] Autonomous: nothing to post — idle
+2026-05-12 21:56:30 | DEBUG    | core.scheduler:126 — [Scheduler] Autonomous: nothing to post — idle
+2026-05-12 22:00:00 | INFO     | core.scheduler:102 — ⏰ [Scheduler] Triggering wake-up pipeline...
+2026-05-12 22:00:00 | INFO     | core.orchestrator:351 — ==================================================
+2026-05-12 22:00:00 | INFO     | core.orchestrator:352 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-12 22:00:00 | INFO     | core.orchestrator:353 — ==================================================
+2026-05-12 22:00:00 | INFO     | core.orchestrator:149 — 🚀 [Orchestrator] Running 9 scrapers...
+2026-05-12 22:00:00 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-12 22:00:00 | INFO     | scrapers.base:186 — 🔍 [SportsGameOdds] Starting scrape...
+2026-05-12 22:00:00 | INFO     | scrapers.base:186 — 🔍 [API-Football] Starting scrape...
+2026-05-12 22:00:00 | INFO     | scrapers.base:186 — 🔍 [Forebet] Starting scrape...
+2026-05-12 22:00:00 | INFO     | scrapers.base:186 — 🔍 [Predictz] Starting scrape...
+2026-05-12 22:00:00 | INFO     | scrapers.base:186 — 🔍 [SoccerVista] Starting scrape...
+2026-05-12 22:00:00 | INFO     | scrapers.base:186 — 🔍 [Windrawwin] Starting scrape...
+2026-05-12 22:00:15 | WARNING  | scrapers.apis.sportsgameodds:48 — [SGO] SOCCER fetch error: 400, message='Bad Request', url=URL('https://api.sportsgameodds.com/v2/events?sport=SOCCER&status=upcoming&limit=50')
+2026-05-12 22:00:15 | DEBUG    | scrapers.apis.sportsgameodds:174 — [SGO] SOCCER: 0 events fetched
+2026-05-12 22:00:15 | SUCCESS  | scrapers.base:190 — ✅ [SportsGameOdds] Found 0 tips in 15.6s
+2026-05-12 22:00:16 | ERROR    | scrapers.web.prediction_sites:212 — [Windrawwin] error: 0, message='', url=URL('https://windrawwin.com/predictions/today/')
+2026-05-12 22:00:16 | SUCCESS  | scrapers.base:190 — ✅ [Windrawwin] Found 0 tips in 16.0s
+2026-05-12 22:00:16 | ERROR    | scrapers.web.forebet:35 — [Forebet] scrape error: 0, message='', url=URL('https://www.forebet.com/en/football-predictions')
+2026-05-12 22:00:16 | SUCCESS  | scrapers.base:190 — ✅ [Forebet] Found 0 tips in 16.5s
+2026-05-12 22:00:17 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_epl fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_epl/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 22:00:17 | ERROR    | scrapers.web.prediction_sites:41 — [Predictz] error: 0, message='', url=URL('https://www.predictz.com/predictions/')
+2026-05-12 22:00:17 | SUCCESS  | scrapers.base:190 — ✅ [Predictz] Found 0 tips in 17.7s
+2026-05-12 22:00:18 | ERROR    | scrapers.web.prediction_sites:132 — [SoccerVista] error: 0, message='', url=URL('https://www.soccervista.com/')
+2026-05-12 22:00:18 | SUCCESS  | scrapers.base:190 — ✅ [SoccerVista] Found 0 tips in 17.9s
+2026-05-12 22:00:31 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_spain_la_liga fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_spain_la_liga/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 22:00:37 | WARNING  | scrapers.apis.api_football:56 — [API-Football] predictions error fx=1391172: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1391172')
+2026-05-12 22:00:47 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_germany_bundesliga fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_germany_bundesliga/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 22:01:03 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_italy_serie_a fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_italy_serie_a/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 22:01:06 | INFO     | scrapers.apis.api_football:227 — [API-Football] ⚽ 12 football tips
+2026-05-12 22:01:09 | INFO     | scrapers.apis.api_football:231 — [API-NBA] 🏀 0 NBA tips
+2026-05-12 22:01:16 | INFO     | scrapers.apis.api_football:235 — [API-Basketball] 🏀 51 basketball tips
+2026-05-12 22:01:17 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_france_ligue_one fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_france_ligue_one/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 22:01:18 | INFO     | scrapers.apis.api_football:239 — [API-Baseball] ⚾ 47 baseball tips
+2026-05-12 22:01:18 | SUCCESS  | scrapers.base:190 — ✅ [API-Football] Found 110 tips in 78.4s
+2026-05-12 22:01:30 | DEBUG    | core.scheduler:126 — [Scheduler] Autonomous: nothing to post — idle
+2026-05-12 22:01:31 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_uefa_champs_league fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_uefa_champs_league/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 22:01:47 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_uefa_europa_league fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_uefa_europa_league/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 22:02:02 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_africa_cup_of_nations fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_africa_cup_of_nations/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-12 22:02:02 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 0 tips in 122.5s
+2026-05-12 22:02:02 | INFO     | scrapers.social.telegram_scraper:227 — 🔍 [Telegram] Scraping 20 channels...
+2026-05-12 22:02:03 | INFO     | scrapers.social.telegram_scraper:94 — ✅ [Telegram] Client connected
+2026-05-12 22:02:04 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel bettingtipsfree error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 22:02:07 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] football_predictions: 0 tips found
+2026-05-12 22:02:09 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel vipbettingtips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 22:02:11 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel correctscoretips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 22:02:14 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel oddsmarket error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 22:02:16 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel sureoddstips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 22:02:19 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] valuebetting: 0 tips found
+2026-05-12 22:02:21 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel overunder_tips error: No user has "overunder_tips" as username
+2026-05-12 22:02:24 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] btts_tips: 0 tips found
+2026-05-12 22:02:26 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel accumulatortips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 22:02:28 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] premiumtipsdaily: 0 tips found
+2026-05-12 22:02:31 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel surebetsdaily error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 22:02:33 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] smartbetai: 0 tips found
+2026-05-12 22:02:35 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel databettingtips error: No user has "databettingtips" as username
+2026-05-12 22:02:38 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel predictzchannel error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 22:02:40 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel footballtips365 error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 22:02:43 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] sportpicksdaily: 0 tips found
+2026-05-12 22:02:45 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel bettingexpert_tips error: No user has "bettingexpert_tips" as username
+2026-05-12 22:02:47 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel oddscomparison error: No user has "oddscomparison" as username
+2026-05-12 22:02:49 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel fixedpredictions error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-12 22:02:51 | SUCCESS  | scrapers.social.telegram_scraper:229 — ✅ [Telegram] Total tips: 0
+2026-05-12 22:02:51 | INFO     | scrapers.social.social_scrapers:302 — 🔍 [Twitter] Scanning 22 accounts...
+2026-05-12 22:02:54 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @PinchBet error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:02:54 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @AndyRobsonTips error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:02:54 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @WSTipster error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:02:55 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @MarkOHaire error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:02:55 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @BettingExpert error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:02:55 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @FootyAccums error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:02:56 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @Oddschecker error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:02:56 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @SmartBettingClub error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:02:57 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @TheRealTipster error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:02:57 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @BettingTips4You error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:02:57 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @CorrectScorePro error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:02:58 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @VIPBettingTips error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:02:59 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @FootballValue error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:02:59 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @AccaTracker error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:02:59 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @InfogolApp error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:02:59 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @OddsJam error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:03:00 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @RebelBetting error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:03:00 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @TrademateSports error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:03:00 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @FootballTipsHub error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:03:01 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @AccaBet error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:03:01 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @BetAdvisor error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:03:01 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @TipsterHQ error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-12 22:03:01 | SUCCESS  | scrapers.social.social_scrapers:304 — ✅ [Twitter] Found 0 tips
+2026-05-12 22:03:01 | WARNING  | core.orchestrator:177 — [Orchestrator] Android scraping skipped: cannot import name '_imaging' from 'PIL' (C:\Users\Black\Desktop\tipfusion_ai_ultimate\venv\Lib\site-packages\PIL\__init__.py)
+2026-05-12 22:03:01 | SUCCESS  | core.orchestrator:179 — ✅ [Orchestrator] Total raw tips collected: 110
+2026-05-12 22:03:02 | INFO     | core.orchestrator:255 — 💾 [Orchestrator] Stored 2 new tips to DB
+2026-05-12 22:03:02 | INFO     | analyzer.engine:440 — 🧠 [Analysis] Processing 110 tips...
+2026-05-12 22:03:02 | DEBUG    | analyzer.engine:443 — [Analysis] Grouped into 110 unique matches
+2026-05-12 22:03:02 | SUCCESS  | analyzer.engine:454 — ✅ [Analysis] 0/110 matches passed threshold (min=65%)
+2026-05-12 22:03:02 | INFO     | core.orchestrator:368 — [Orchestrator] No high-confidence predictions found this run
+2026-05-12 22:06:30 | DEBUG    | core.scheduler:126 — [Scheduler] Autonomous: nothing to post — idle
+2026-05-12 22:11:30 | DEBUG    | core.scheduler:126 — [Scheduler] Autonomous: nothing to post — idle
+2026-05-12 22:16:30 | DEBUG    | core.scheduler:126 — [Scheduler] Autonomous: nothing to post — idle
+2026-05-12 22:21:30 | DEBUG    | core.scheduler:126 — [Scheduler] Autonomous: nothing to post — idle

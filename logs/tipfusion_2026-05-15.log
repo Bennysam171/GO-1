@@ -1,0 +1,985 @@
+2026-05-15 07:17:54 | INFO     | api.app:50 — 🚀 TipFusion AI starting up...
+2026-05-15 07:17:54 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-15 07:17:55 | INFO     | telegram_bot.bot:108 — ✅ [TelegramBot] Ready — channel -1003954198931
+2026-05-15 07:17:55 | INFO     | core.scheduler:98 — 📅 [Scheduler] All jobs registered
+2026-05-15 07:17:55 | SUCCESS  | core.scheduler:198 — ✅ [Scheduler] Started — all jobs active
+2026-05-15 07:17:55 | SUCCESS  | api.app:72 — ✅ TipFusion AI is live!
+2026-05-15 07:17:55 | INFO     | core.orchestrator:351 — ==================================================
+2026-05-15 07:17:55 | INFO     | core.orchestrator:352 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-15 07:17:55 | INFO     | core.orchestrator:353 — ==================================================
+2026-05-15 07:17:55 | INFO     | core.orchestrator:149 — 🚀 [Orchestrator] Running 9 scrapers...
+2026-05-15 07:17:55 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-15 07:17:55 | INFO     | scrapers.base:186 — 🔍 [SportsGameOdds] Starting scrape...
+2026-05-15 07:17:55 | INFO     | scrapers.base:186 — 🔍 [API-Football] Starting scrape...
+2026-05-15 07:17:55 | INFO     | scrapers.base:186 — 🔍 [Forebet] Starting scrape...
+2026-05-15 07:17:55 | INFO     | scrapers.base:186 — 🔍 [Predictz] Starting scrape...
+2026-05-15 07:17:55 | INFO     | scrapers.base:186 — 🔍 [SoccerVista] Starting scrape...
+2026-05-15 07:17:55 | INFO     | scrapers.base:186 — 🔍 [Windrawwin] Starting scrape...
+2026-05-15 07:18:10 | WARNING  | scrapers.apis.sportsgameodds:48 — [SGO] SOCCER fetch error: 400, message='Bad Request', url=URL('https://api.sportsgameodds.com/v2/events?sport=SOCCER&status=upcoming&limit=50')
+2026-05-15 07:18:10 | DEBUG    | scrapers.apis.sportsgameodds:174 — [SGO] SOCCER: 0 events fetched
+2026-05-15 07:18:10 | SUCCESS  | scrapers.base:190 — ✅ [SportsGameOdds] Found 0 tips in 14.9s
+2026-05-15 07:18:11 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_epl fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_epl/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-15 07:18:11 | ERROR    | scrapers.web.forebet:35 — [Forebet] scrape error: 0, message='', url=URL('https://www.forebet.com/en/football-predictions')
+2026-05-15 07:18:11 | SUCCESS  | scrapers.base:190 — ✅ [Forebet] Found 0 tips in 15.7s
+2026-05-15 07:18:12 | ERROR    | scrapers.web.prediction_sites:212 — [Windrawwin] error: 0, message='', url=URL('https://windrawwin.com/predictions/today/')
+2026-05-15 07:18:12 | SUCCESS  | scrapers.base:190 — ✅ [Windrawwin] Found 0 tips in 17.0s
+2026-05-15 07:18:13 | ERROR    | scrapers.web.prediction_sites:41 — [Predictz] error: 0, message='', url=URL('https://www.predictz.com/predictions/')
+2026-05-15 07:18:16 | SUCCESS  | scrapers.base:190 — ✅ [Predictz] Found 0 tips in 20.4s
+2026-05-15 07:18:16 | ERROR    | scrapers.web.prediction_sites:132 — [SoccerVista] error: 0, message='', url=URL('https://www.soccervista.com/')
+2026-05-15 07:18:16 | SUCCESS  | scrapers.base:190 — ✅ [SoccerVista] Found 0 tips in 20.4s
+2026-05-15 07:18:31 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_spain_la_liga fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_spain_la_liga/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-15 07:18:45 | WARNING  | scrapers.apis.api_football:56 — [API-Football] predictions error fx=1388608: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1388608')
+2026-05-15 07:18:48 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_germany_bundesliga fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_germany_bundesliga/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-15 07:19:04 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_italy_serie_a fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_italy_serie_a/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-15 07:19:22 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_france_ligue_one fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_france_ligue_one/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-15 07:19:33 | WARNING  | scrapers.apis.api_football:56 — [API-Football] predictions error fx=1396534: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1396534')
+2026-05-15 07:19:37 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_uefa_champs_league fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_uefa_champs_league/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-15 07:19:52 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_uefa_europa_league fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_uefa_europa_league/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-15 07:20:09 | WARNING  | scrapers.apis.odds_api:87 — [OddsAPI] soccer_africa_cup_of_nations fetch error: 422, message='Unprocessable Entity', url=URL('https://api.the-odds-api.com/v4/sports/soccer_africa_cup_of_nations/odds/?apiKey=781931e972ee586cefbcc97ba7b3d638&regions=uk,eu&markets=h2h,totals,btts&oddsFormat=decimal&dateFormat=iso')
+2026-05-15 07:20:09 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 0 tips in 133.6s
+2026-05-15 07:20:18 | INFO     | scrapers.apis.api_football:227 — [API-Football] ⚽ 27 football tips
+2026-05-15 07:20:26 | INFO     | scrapers.apis.api_football:231 — [API-NBA] 🏀 0 NBA tips
+2026-05-15 07:20:31 | INFO     | scrapers.apis.api_football:235 — [API-Basketball] 🏀 102 basketball tips
+2026-05-15 07:20:37 | INFO     | scrapers.apis.api_football:239 — [API-Baseball] ⚾ 58 baseball tips
+2026-05-15 07:20:37 | SUCCESS  | scrapers.base:190 — ✅ [API-Football] Found 187 tips in 161.2s
+2026-05-15 07:20:37 | INFO     | scrapers.social.telegram_scraper:227 — 🔍 [Telegram] Scraping 20 channels...
+2026-05-15 07:20:43 | INFO     | scrapers.social.telegram_scraper:94 — ✅ [Telegram] Client connected
+2026-05-15 07:20:43 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel bettingtipsfree error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:20:47 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] football_predictions: 0 tips found
+2026-05-15 07:20:50 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel vipbettingtips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:20:53 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel correctscoretips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:20:55 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel oddsmarket error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:20:58 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel sureoddstips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:21:01 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] valuebetting: 0 tips found
+2026-05-15 07:21:03 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel overunder_tips error: No user has "overunder_tips" as username
+2026-05-15 07:21:07 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] btts_tips: 0 tips found
+2026-05-15 07:21:09 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel accumulatortips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:21:12 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] premiumtipsdaily: 0 tips found
+2026-05-15 07:21:15 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel surebetsdaily error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:21:19 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] smartbetai: 0 tips found
+2026-05-15 07:21:21 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel databettingtips error: No user has "databettingtips" as username
+2026-05-15 07:21:24 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel predictzchannel error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:21:26 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel footballtips365 error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:21:29 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] sportpicksdaily: 0 tips found
+2026-05-15 07:21:31 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel bettingexpert_tips error: No user has "bettingexpert_tips" as username
+2026-05-15 07:21:34 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel oddscomparison error: No user has "oddscomparison" as username
+2026-05-15 07:21:36 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel fixedpredictions error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:21:38 | SUCCESS  | scrapers.social.telegram_scraper:229 — ✅ [Telegram] Total tips: 0
+2026-05-15 07:21:38 | INFO     | scrapers.social.social_scrapers:302 — 🔍 [Twitter] Scanning 22 accounts...
+2026-05-15 07:21:41 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @PinchBet error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:41 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @AndyRobsonTips error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:42 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @WSTipster error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:42 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @MarkOHaire error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:42 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @BettingExpert error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:43 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @FootyAccums error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:43 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @Oddschecker error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:44 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @SmartBettingClub error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:44 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @TheRealTipster error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:44 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @BettingTips4You error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:45 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @CorrectScorePro error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:45 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @VIPBettingTips error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:46 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @FootballValue error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:46 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @AccaTracker error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:46 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @InfogolApp error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:47 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @OddsJam error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:47 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @RebelBetting error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:48 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @TrademateSports error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:48 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @FootballTipsHub error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:48 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @AccaBet error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:48 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @BetAdvisor error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:49 | WARNING  | scrapers.social.social_scrapers:294 — [Twitter] @TipsterHQ error: 402 Payment Required
+Your enrolled account [2054157396533002240] does not have any credits to fulfill this request.
+2026-05-15 07:21:49 | SUCCESS  | scrapers.social.social_scrapers:304 — ✅ [Twitter] Found 0 tips
+2026-05-15 07:21:50 | WARNING  | core.orchestrator:177 — [Orchestrator] Android scraping skipped: cannot import name '_imaging' from 'PIL' (C:\Users\Black\Desktop\tipfusion_ai_ultimate\venv\Lib\site-packages\PIL\__init__.py)
+2026-05-15 07:21:50 | SUCCESS  | core.orchestrator:179 — ✅ [Orchestrator] Total raw tips collected: 187
+2026-05-15 07:21:51 | INFO     | core.orchestrator:255 — 💾 [Orchestrator] Stored 173 new tips to DB
+2026-05-15 07:21:51 | INFO     | analyzer.engine:440 — 🧠 [Analysis] Processing 187 tips...
+2026-05-15 07:21:51 | DEBUG    | analyzer.engine:443 — [Analysis] Grouped into 179 unique matches
+2026-05-15 07:21:51 | SUCCESS  | analyzer.engine:454 — ✅ [Analysis] 0/179 matches passed threshold (min=65%)
+2026-05-15 07:21:51 | INFO     | core.orchestrator:368 — [Orchestrator] No high-confidence predictions found this run
+2026-05-15 07:22:55 | DEBUG    | core.scheduler:126 — [Scheduler] Autonomous: nothing to post — idle
+2026-05-15 07:27:38 | INFO     | api.app:76 — 🔻 TipFusion AI shutting down...
+2026-05-15 07:27:38 | INFO     | core.scheduler:202 — [Scheduler] Stopped
+2026-05-15 07:27:38 | INFO     | api.app:81 — 👋 Shutdown complete
+2026-05-15 07:40:30 | INFO     | api.app:50 — 🚀 TipFusion AI starting up...
+2026-05-15 07:40:30 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-15 07:40:31 | INFO     | telegram_bot.bot:108 — ✅ [TelegramBot] Ready — channel -1003954198931
+2026-05-15 07:40:31 | INFO     | core.scheduler:98 — 📅 [Scheduler] All jobs registered
+2026-05-15 07:40:31 | SUCCESS  | core.scheduler:198 — ✅ [Scheduler] Started — all jobs active
+2026-05-15 07:40:31 | SUCCESS  | api.app:72 — ✅ TipFusion AI is live!
+2026-05-15 07:40:31 | INFO     | core.orchestrator:309 — ==================================================
+2026-05-15 07:40:31 | INFO     | core.orchestrator:310 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-15 07:40:31 | INFO     | core.orchestrator:311 — ==================================================
+2026-05-15 07:40:31 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ sportsgameodds (apis) is DISABLED in scraper_config.json
+2026-05-15 07:40:31 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ forebet (web) is DISABLED in scraper_config.json
+2026-05-15 07:40:31 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ predictz (web) is DISABLED in scraper_config.json
+2026-05-15 07:40:31 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ soccervista (web) is DISABLED in scraper_config.json
+2026-05-15 07:40:31 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ windrawwin (web) is DISABLED in scraper_config.json
+2026-05-15 07:40:31 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ twitter (social) is DISABLED in scraper_config.json
+2026-05-15 07:40:31 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ reddit (social) is DISABLED in scraper_config.json
+2026-05-15 07:40:31 | INFO     | core.orchestrator:139 — 🚀 [Orchestrator] Running 2 API/web + 1 social scrapers
+2026-05-15 07:40:31 | INFO     | core.orchestrator:148 —    ⏸  [apis] sportsgameodds — DISABLED
+2026-05-15 07:40:31 | INFO     | core.orchestrator:148 —    ⏸  [web] forebet — DISABLED
+2026-05-15 07:40:31 | INFO     | core.orchestrator:148 —    ⏸  [web] predictz — DISABLED
+2026-05-15 07:40:31 | INFO     | core.orchestrator:148 —    ⏸  [web] soccervista — DISABLED
+2026-05-15 07:40:31 | INFO     | core.orchestrator:148 —    ⏸  [web] windrawwin — DISABLED
+2026-05-15 07:40:31 | INFO     | core.orchestrator:148 —    ⏸  [social] twitter — DISABLED
+2026-05-15 07:40:31 | INFO     | core.orchestrator:148 —    ⏸  [social] reddit — DISABLED
+2026-05-15 07:40:31 | INFO     | core.orchestrator:148 —    ⏸  [android] bluestacks — DISABLED
+2026-05-15 07:40:31 | INFO     | scrapers.base:186 — 🔍 [API-Football] Starting scrape...
+2026-05-15 07:40:31 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-15 07:40:33 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:33 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:33 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:33 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:33 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:33 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:33 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:33 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:33 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:33 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:36 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:36 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:36 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:36 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:36 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:36 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:36 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:36 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:36 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:36 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:39 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:39 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:39 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:39 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:39 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:39 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:39 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:39 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:39 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:41 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:41 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:41 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:41 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:41 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:41 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:41 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:41 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:41 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:41 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:51 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:51 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:51 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:51 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:51 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:51 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:51 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:51 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:51 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:54 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:56 | WARNING  | scrapers.apis.odds_api:139 — [OddsAPI] Error processing event: can't compare offset-naive and offset-aware datetimes
+2026-05-15 07:40:58 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 0 tips in 27.2s
+2026-05-15 07:41:10 | WARNING  | scrapers.apis.api_football:56 — [API-Football] predictions error fx=1388607: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1388607')
+2026-05-15 07:41:57 | WARNING  | scrapers.apis.api_football:56 — [API-Football] predictions error fx=1436203: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1436203')
+2026-05-15 07:42:37 | INFO     | scrapers.apis.api_football:227 — [API-Football] ⚽ 28 football tips
+2026-05-15 07:42:39 | INFO     | scrapers.apis.api_football:231 — [API-NBA] 🏀 0 NBA tips
+2026-05-15 07:42:43 | INFO     | scrapers.apis.api_football:235 — [API-Basketball] 🏀 102 basketball tips
+2026-05-15 07:42:46 | INFO     | scrapers.apis.api_football:239 — [API-Baseball] ⚾ 58 baseball tips
+2026-05-15 07:42:46 | SUCCESS  | scrapers.base:190 — ✅ [API-Football] Found 188 tips in 134.5s
+2026-05-15 07:42:46 | INFO     | scrapers.social.telegram_scraper:227 — 🔍 [Telegram] Scraping 20 channels...
+2026-05-15 07:42:48 | INFO     | scrapers.social.telegram_scraper:94 — ✅ [Telegram] Client connected
+2026-05-15 07:42:48 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel bettingtipsfree error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:42:50 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] football_predictions: 0 tips found
+2026-05-15 07:42:53 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel vipbettingtips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:42:55 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel correctscoretips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:42:57 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel oddsmarket error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:43:00 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel sureoddstips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:43:02 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] valuebetting: 0 tips found
+2026-05-15 07:43:05 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel overunder_tips error: No user has "overunder_tips" as username
+2026-05-15 07:43:07 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] btts_tips: 0 tips found
+2026-05-15 07:43:09 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel accumulatortips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:43:12 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] premiumtipsdaily: 0 tips found
+2026-05-15 07:43:15 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel surebetsdaily error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:43:17 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] smartbetai: 0 tips found
+2026-05-15 07:43:19 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel databettingtips error: No user has "databettingtips" as username
+2026-05-15 07:43:21 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel predictzchannel error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:43:24 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel footballtips365 error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:43:26 | DEBUG    | scrapers.social.telegram_scraper:201 — [Telegram] sportpicksdaily: 0 tips found
+2026-05-15 07:43:29 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel bettingexpert_tips error: No user has "bettingexpert_tips" as username
+2026-05-15 07:43:31 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel oddscomparison error: No user has "oddscomparison" as username
+2026-05-15 07:43:33 | WARNING  | scrapers.social.telegram_scraper:204 — [Telegram] channel fixedpredictions error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:43:35 | SUCCESS  | scrapers.social.telegram_scraper:229 — ✅ [Telegram] Total tips: 0
+2026-05-15 07:43:35 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ bluestacks (android) is DISABLED in scraper_config.json
+2026-05-15 07:43:35 | INFO     | core.orchestrator:177 —    ⏸  [android] bluestacks — DISABLED
+2026-05-15 07:43:35 | SUCCESS  | core.orchestrator:179 — ✅ [Orchestrator] Total tips collected: 188
+2026-05-15 07:43:36 | INFO     | database.crud:47 — 📡 New source registered: API-Basketball [SourceType.API]
+2026-05-15 07:43:36 | INFO     | database.crud:47 — 📡 New source registered: API-Baseball [SourceType.API]
+2026-05-15 07:43:37 | INFO     | core.orchestrator:239 — 💾 [Orchestrator] Stored 168 new tips
+2026-05-15 07:43:37 | INFO     | analyzer.engine:440 — 🧠 [Analysis] Processing 188 tips...
+2026-05-15 07:43:37 | DEBUG    | analyzer.engine:443 — [Analysis] Grouped into 180 unique matches
+2026-05-15 07:43:37 | SUCCESS  | analyzer.engine:454 — ✅ [Analysis] 180/180 matches passed threshold (min=45%)
+2026-05-15 07:43:37 | INFO     | core.orchestrator:289 — 💾 [Orchestrator] Saved 180 fusion predictions
+2026-05-15 07:43:37 | INFO     | telegram_bot.bot:131 — 📤 [TelegramBot] Broadcasting 180 predictions...
+2026-05-15 07:44:25 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 15 seconds
+2026-05-15 07:44:28 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 13 seconds
+2026-05-15 07:44:30 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:44:32 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 9 seconds
+2026-05-15 07:44:39 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:45:28 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 14 seconds
+2026-05-15 07:45:30 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 12 seconds
+2026-05-15 07:45:31 | INFO     | core.scheduler:122 — ⏰ [Scheduler] Autonomous: 138 unposted — broadcasting
+2026-05-15 07:45:31 | INFO     | telegram_bot.bot:131 — 📤 [TelegramBot] Broadcasting 138 predictions...
+2026-05-15 07:45:31 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 10 seconds
+2026-05-15 07:45:32 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 10 seconds
+2026-05-15 07:45:38 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:45:39 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:46:08 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 34 seconds
+2026-05-15 07:46:10 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 32 seconds
+2026-05-15 07:46:10 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 31 seconds
+2026-05-15 07:46:12 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 30 seconds
+2026-05-15 07:46:12 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 29 seconds
+2026-05-15 07:46:14 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 28 seconds
+2026-05-15 07:46:15 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 27 seconds
+2026-05-15 07:46:16 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 25 seconds
+2026-05-15 07:46:17 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 25 seconds
+2026-05-15 07:46:19 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 23 seconds
+2026-05-15 07:46:19 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 22 seconds
+2026-05-15 07:46:21 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 20 seconds
+2026-05-15 07:46:21 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 20 seconds
+2026-05-15 07:46:23 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 18 seconds
+2026-05-15 07:46:24 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 18 seconds
+2026-05-15 07:46:26 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 16 seconds
+2026-05-15 07:46:26 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 16 seconds
+2026-05-15 07:46:28 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 14 seconds
+2026-05-15 07:46:28 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 13 seconds
+2026-05-15 07:46:30 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 12 seconds
+2026-05-15 07:46:31 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:46:32 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 9 seconds
+2026-05-15 07:46:33 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 9 seconds
+2026-05-15 07:46:39 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:46:40 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:47:12 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 33 seconds
+2026-05-15 07:47:12 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 33 seconds
+2026-05-15 07:47:14 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 31 seconds
+2026-05-15 07:47:14 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 31 seconds
+2026-05-15 07:47:16 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 28 seconds
+2026-05-15 07:47:17 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 28 seconds
+2026-05-15 07:47:18 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 26 seconds
+2026-05-15 07:47:19 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 26 seconds
+2026-05-15 07:47:21 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 24 seconds
+2026-05-15 07:47:21 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 24 seconds
+2026-05-15 07:47:23 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 22 seconds
+2026-05-15 07:47:23 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 21 seconds
+2026-05-15 07:47:25 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 20 seconds
+2026-05-15 07:47:25 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 19 seconds
+2026-05-15 07:47:27 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 17 seconds
+2026-05-15 07:47:28 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 17 seconds
+2026-05-15 07:47:29 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 15 seconds
+2026-05-15 07:47:30 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 15 seconds
+2026-05-15 07:47:32 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 13 seconds
+2026-05-15 07:47:32 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 12 seconds
+2026-05-15 07:47:34 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:47:34 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 10 seconds
+2026-05-15 07:47:36 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 9 seconds
+2026-05-15 07:47:41 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:47:43 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:48:11 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 34 seconds
+2026-05-15 07:48:13 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 31 seconds
+2026-05-15 07:48:14 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 31 seconds
+2026-05-15 07:48:16 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 29 seconds
+2026-05-15 07:48:16 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 29 seconds
+2026-05-15 07:48:18 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 27 seconds
+2026-05-15 07:48:18 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 27 seconds
+2026-05-15 07:48:20 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 25 seconds
+2026-05-15 07:48:21 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 24 seconds
+2026-05-15 07:48:22 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 22 seconds
+2026-05-15 07:48:23 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 21 seconds
+2026-05-15 07:48:24 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 20 seconds
+2026-05-15 07:48:26 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 18 seconds
+2026-05-15 07:48:27 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 18 seconds
+2026-05-15 07:48:29 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 16 seconds
+2026-05-15 07:48:29 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 16 seconds
+2026-05-15 07:48:32 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 13 seconds
+2026-05-15 07:48:32 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 13 seconds
+2026-05-15 07:48:34 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:48:34 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:48:41 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:48:41 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:49:15 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:49:15 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:49:22 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:49:22 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:49:29 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:49:29 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:49:35 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 13 seconds
+2026-05-15 07:49:37 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:49:37 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:49:44 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:49:44 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:50:16 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 35 seconds
+2026-05-15 07:50:18 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 32 seconds
+2026-05-15 07:50:19 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 32 seconds
+2026-05-15 07:50:20 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 30 seconds
+2026-05-15 07:50:21 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 29 seconds
+2026-05-15 07:50:24 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 27 seconds
+2026-05-15 07:50:25 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 25 seconds
+2026-05-15 07:50:27 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 24 seconds
+2026-05-15 07:50:28 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 23 seconds
+2026-05-15 07:50:30 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 20 seconds
+2026-05-15 07:50:30 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 20 seconds
+2026-05-15 07:50:32 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 18 seconds
+2026-05-15 07:50:34 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 17 seconds
+2026-05-15 07:50:35 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 16 seconds
+2026-05-15 07:50:37 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 14 seconds
+2026-05-15 07:50:37 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 13 seconds
+2026-05-15 07:50:39 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:50:40 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 11 seconds
+2026-05-15 07:50:41 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 9 seconds
+2026-05-15 07:50:42 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 9 seconds
+2026-05-15 07:50:48 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:50:49 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Timed out
+2026-05-15 07:51:14 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 37 seconds
+2026-05-15 07:51:14 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 36 seconds
+2026-05-15 07:51:16 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 35 seconds
+2026-05-15 07:51:16 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 34 seconds
+2026-05-15 07:51:18 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 33 seconds
+2026-05-15 07:51:19 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 32 seconds
+2026-05-15 07:51:20 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 30 seconds
+2026-05-15 07:51:21 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 30 seconds
+2026-05-15 07:51:23 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 28 seconds
+2026-05-15 07:51:23 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 27 seconds
+2026-05-15 07:51:25 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 26 seconds
+2026-05-15 07:51:25 | ERROR    | telegram_bot.bot:123 — [TelegramBot] Send failed: Flood control exceeded. Retry in 25 seconds
+2026-05-15 07:51:27 | INFO     | api.app:76 — 🔻 TipFusion AI shutting down...
+2026-05-15 07:51:27 | INFO     | core.scheduler:202 — [Scheduler] Stopped
+2026-05-15 07:51:27 | INFO     | api.app:81 — 👋 Shutdown complete
+2026-05-15 07:51:57 | INFO     | api.app:50 — 🚀 TipFusion AI starting up...
+2026-05-15 07:51:57 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-15 07:51:58 | INFO     | telegram_bot.bot:115 — ✅ [TelegramBot] Ready — channel -1003954198931
+2026-05-15 07:51:58 | INFO     | core.scheduler:98 — 📅 [Scheduler] All jobs registered
+2026-05-15 07:51:58 | SUCCESS  | core.scheduler:198 — ✅ [Scheduler] Started — all jobs active
+2026-05-15 07:51:58 | SUCCESS  | api.app:72 — ✅ TipFusion AI is live!
+2026-05-15 07:51:58 | INFO     | core.orchestrator:309 — ==================================================
+2026-05-15 07:51:58 | INFO     | core.orchestrator:310 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-15 07:51:58 | INFO     | core.orchestrator:311 — ==================================================
+2026-05-15 07:51:58 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ sportsgameodds (apis) is DISABLED in scraper_config.json
+2026-05-15 07:51:58 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ forebet (web) is DISABLED in scraper_config.json
+2026-05-15 07:51:58 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ predictz (web) is DISABLED in scraper_config.json
+2026-05-15 07:51:58 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ soccervista (web) is DISABLED in scraper_config.json
+2026-05-15 07:51:58 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ windrawwin (web) is DISABLED in scraper_config.json
+2026-05-15 07:51:58 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ twitter (social) is DISABLED in scraper_config.json
+2026-05-15 07:51:58 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ reddit (social) is DISABLED in scraper_config.json
+2026-05-15 07:51:58 | INFO     | core.orchestrator:139 — 🚀 [Orchestrator] Running 2 API/web + 1 social scrapers
+2026-05-15 07:51:58 | INFO     | core.orchestrator:148 —    ⏸  [apis] sportsgameodds — DISABLED
+2026-05-15 07:51:58 | INFO     | core.orchestrator:148 —    ⏸  [web] forebet — DISABLED
+2026-05-15 07:51:58 | INFO     | core.orchestrator:148 —    ⏸  [web] predictz — DISABLED
+2026-05-15 07:51:58 | INFO     | core.orchestrator:148 —    ⏸  [web] soccervista — DISABLED
+2026-05-15 07:51:58 | INFO     | core.orchestrator:148 —    ⏸  [web] windrawwin — DISABLED
+2026-05-15 07:51:58 | INFO     | core.orchestrator:148 —    ⏸  [social] twitter — DISABLED
+2026-05-15 07:51:58 | INFO     | core.orchestrator:148 —    ⏸  [social] reddit — DISABLED
+2026-05-15 07:51:58 | INFO     | core.orchestrator:148 —    ⏸  [android] bluestacks — DISABLED
+2026-05-15 07:51:58 | INFO     | scrapers.base:186 — 🔍 [API-Football] Starting scrape...
+2026-05-15 07:51:58 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-15 07:52:01 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_epl: 10 events
+2026-05-15 07:52:04 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_spain_la_liga: 10 events
+2026-05-15 07:52:06 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_germany_bundesliga: 9 events
+2026-05-15 07:52:09 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_italy_serie_a: 10 events
+2026-05-15 07:52:12 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_france_ligue_one: 9 events
+2026-05-15 07:52:15 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_champs_league: 1 events
+2026-05-15 07:52:17 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_europa_league: 1 events
+2026-05-15 07:52:20 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_africa_cup_of_nations: 0 events
+2026-05-15 07:52:20 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 14 tips in 21.7s
+2026-05-15 07:53:12 | INFO     | scrapers.apis.api_football:237 — [API-Football] ⚽ 8 football tips
+2026-05-15 07:53:15 | INFO     | scrapers.apis.api_football:241 — [API-NBA] 🏀 0 NBA tips
+2026-05-15 07:53:18 | INFO     | scrapers.apis.api_football:245 — [API-Basketball] 🏀 102 basketball tips
+2026-05-15 07:53:21 | INFO     | scrapers.apis.api_football:249 — [API-Baseball] ⚾ 58 baseball tips
+2026-05-15 07:53:21 | SUCCESS  | scrapers.base:190 — ✅ [API-Football] Found 168 tips in 82.9s
+2026-05-15 07:53:21 | INFO     | scrapers.social.telegram_scraper:230 — 🔍 [Telegram] Scraping 20 channels...
+2026-05-15 07:53:24 | INFO     | scrapers.social.telegram_scraper:97 — ✅ [Telegram] Client connected
+2026-05-15 07:53:24 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel betfairexchange error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:53:26 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel tipsterpro error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:53:28 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel soccerprediction error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:53:31 | DEBUG    | scrapers.social.telegram_scraper:204 — [Telegram] footballtipstoday: 0 tips found
+2026-05-15 07:53:33 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel freebettingtips1 error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:53:35 | DEBUG    | scrapers.social.telegram_scraper:204 — [Telegram] bettingtipsworld: 0 tips found
+2026-05-15 07:53:38 | DEBUG    | scrapers.social.telegram_scraper:204 — [Telegram] footballbettingtips: 0 tips found
+2026-05-15 07:53:40 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel sure9japredictions error: No user has "sure9japredictions" as username
+2026-05-15 07:53:43 | DEBUG    | scrapers.social.telegram_scraper:204 — [Telegram] naijabettingtips: 0 tips found
+2026-05-15 07:53:45 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel viptips247 error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:53:48 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel sportbettingtips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:53:50 | DEBUG    | scrapers.social.telegram_scraper:204 — [Telegram] dailyfootballtips: 0 tips found
+2026-05-15 07:53:52 | DEBUG    | scrapers.social.telegram_scraper:204 — [Telegram] footballpredictions: 0 tips found
+2026-05-15 07:53:55 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel surebettingtips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:53:57 | DEBUG    | scrapers.social.telegram_scraper:204 — [Telegram] oddsvalue: 0 tips found
+2026-05-15 07:54:00 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel bettinganalysis error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:54:02 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel pronosticfoot error: No user has "pronosticfoot" as username
+2026-05-15 07:54:04 | DEBUG    | scrapers.social.telegram_scraper:204 — [Telegram] tipstersoccer: 0 tips found
+2026-05-15 07:54:07 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel betsmarter error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:54:09 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel footballedge error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 07:54:11 | SUCCESS  | scrapers.social.telegram_scraper:232 — ✅ [Telegram] Total tips: 0
+2026-05-15 07:54:11 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ bluestacks (android) is DISABLED in scraper_config.json
+2026-05-15 07:54:11 | INFO     | core.orchestrator:177 —    ⏸  [android] bluestacks — DISABLED
+2026-05-15 07:54:11 | SUCCESS  | core.orchestrator:179 — ✅ [Orchestrator] Total tips collected: 182
+2026-05-15 07:54:12 | INFO     | database.crud:47 — 📡 New source registered: TheOddsAPI [SourceType.API]
+2026-05-15 07:54:12 | INFO     | core.orchestrator:239 — 💾 [Orchestrator] Stored 14 new tips
+2026-05-15 07:54:12 | INFO     | analyzer.engine:440 — 🧠 [Analysis] Processing 182 tips...
+2026-05-15 07:54:12 | DEBUG    | analyzer.engine:443 — [Analysis] Grouped into 168 unique matches
+2026-05-15 07:54:12 | SUCCESS  | analyzer.engine:454 — ✅ [Analysis] 168/168 matches passed threshold (min=45%)
+2026-05-15 07:54:13 | INFO     | core.orchestrator:289 — 💾 [Orchestrator] Saved 168 fusion predictions
+2026-05-15 07:54:13 | INFO     | telegram_bot.bot:184 — 📤 [TelegramBot] Posting top 5 of 168 predictions...
+2026-05-15 07:54:13 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 1/5: caimanes del llano vs sabios baloncesto (98.0%)
+2026-05-15 07:54:18 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 2/5: hobart chargers w vs dandenong rangers w (98.0%)
+2026-05-15 07:54:22 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 3/5: logan thunder w vs gold coast rollers w (98.0%)
+2026-05-15 07:54:26 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 4/5: northern tasmania w vs diamond valley w (98.0%)
+2026-05-15 07:54:30 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 5/5: perth redbacks w vs lakeside lightning w (98.0%)
+2026-05-15 07:54:30 | SUCCESS  | telegram_bot.bot:221 — ✅ [TelegramBot] Broadcast complete — 5 posted
+2026-05-15 07:54:30 | SUCCESS  | core.orchestrator:334 — ✅ Pipeline done in 152.5s — 182 tips → 168 predictions → 168 posted
+2026-05-15 07:55:00 | INFO     | core.scheduler:151 — ⏰ [Scheduler] Posting daily summary...
+2026-05-15 07:56:58 | INFO     | core.scheduler:122 — ⏰ [Scheduler] Autonomous: 338 unposted — broadcasting
+2026-05-15 07:56:58 | INFO     | telegram_bot.bot:184 — 📤 [TelegramBot] Posting top 5 of 338 predictions...
+2026-05-15 07:56:58 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 1/5: caimanes del llano vs sabios baloncesto (98.0%)
+2026-05-15 07:57:03 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 2/5: hobart chargers w vs dandenong rangers w (98.0%)
+2026-05-15 07:57:07 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 3/5: logan thunder w vs gold coast rollers w (98.0%)
+2026-05-15 07:57:11 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 4/5: northern tasmania w vs diamond valley w (98.0%)
+2026-05-15 07:57:15 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 5/5: perth redbacks w vs lakeside lightning w (98.0%)
+2026-05-15 07:57:15 | SUCCESS  | telegram_bot.bot:221 — ✅ [TelegramBot] Broadcast complete — 5 posted
+2026-05-15 08:00:00 | INFO     | core.scheduler:102 — ⏰ [Scheduler] Triggering wake-up pipeline...
+2026-05-15 08:00:00 | INFO     | core.orchestrator:309 — ==================================================
+2026-05-15 08:00:00 | INFO     | core.orchestrator:310 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-15 08:00:00 | INFO     | core.orchestrator:311 — ==================================================
+2026-05-15 08:00:00 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ sportsgameodds (apis) is DISABLED in scraper_config.json
+2026-05-15 08:00:00 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ forebet (web) is DISABLED in scraper_config.json
+2026-05-15 08:00:00 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ predictz (web) is DISABLED in scraper_config.json
+2026-05-15 08:00:00 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ soccervista (web) is DISABLED in scraper_config.json
+2026-05-15 08:00:00 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ windrawwin (web) is DISABLED in scraper_config.json
+2026-05-15 08:00:00 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ twitter (social) is DISABLED in scraper_config.json
+2026-05-15 08:00:00 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ reddit (social) is DISABLED in scraper_config.json
+2026-05-15 08:00:00 | INFO     | core.orchestrator:139 — 🚀 [Orchestrator] Running 2 API/web + 1 social scrapers
+2026-05-15 08:00:00 | INFO     | core.orchestrator:148 —    ⏸  [apis] sportsgameodds — DISABLED
+2026-05-15 08:00:00 | INFO     | core.orchestrator:148 —    ⏸  [web] forebet — DISABLED
+2026-05-15 08:00:00 | INFO     | core.orchestrator:148 —    ⏸  [web] predictz — DISABLED
+2026-05-15 08:00:00 | INFO     | core.orchestrator:148 —    ⏸  [web] soccervista — DISABLED
+2026-05-15 08:00:00 | INFO     | core.orchestrator:148 —    ⏸  [web] windrawwin — DISABLED
+2026-05-15 08:00:00 | INFO     | core.orchestrator:148 —    ⏸  [social] twitter — DISABLED
+2026-05-15 08:00:00 | INFO     | core.orchestrator:148 —    ⏸  [social] reddit — DISABLED
+2026-05-15 08:00:00 | INFO     | core.orchestrator:148 —    ⏸  [android] bluestacks — DISABLED
+2026-05-15 08:00:00 | INFO     | scrapers.base:186 — 🔍 [API-Football] Starting scrape...
+2026-05-15 08:00:00 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-15 08:00:02 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_epl: 10 events
+2026-05-15 08:00:05 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_spain_la_liga: 10 events
+2026-05-15 08:00:07 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_germany_bundesliga: 9 events
+2026-05-15 08:00:09 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_italy_serie_a: 10 events
+2026-05-15 08:00:11 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_france_ligue_one: 9 events
+2026-05-15 08:00:14 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_champs_league: 1 events
+2026-05-15 08:00:16 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_europa_league: 1 events
+2026-05-15 08:00:18 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_africa_cup_of_nations: 0 events
+2026-05-15 08:00:18 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 14 tips in 18.6s
+2026-05-15 08:01:11 | INFO     | scrapers.apis.api_football:237 — [API-Football] ⚽ 8 football tips
+2026-05-15 08:01:14 | INFO     | scrapers.apis.api_football:241 — [API-NBA] 🏀 0 NBA tips
+2026-05-15 08:01:16 | INFO     | scrapers.apis.api_football:245 — [API-Basketball] 🏀 102 basketball tips
+2026-05-15 08:01:18 | INFO     | scrapers.apis.api_football:249 — [API-Baseball] ⚾ 58 baseball tips
+2026-05-15 08:01:18 | SUCCESS  | scrapers.base:190 — ✅ [API-Football] Found 168 tips in 78.7s
+2026-05-15 08:01:18 | INFO     | scrapers.social.telegram_scraper:230 — 🔍 [Telegram] Scraping 20 channels...
+2026-05-15 08:01:19 | INFO     | scrapers.social.telegram_scraper:97 — ✅ [Telegram] Client connected
+2026-05-15 08:01:20 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel betfairexchange error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 08:01:22 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel tipsterpro error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 08:01:24 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel soccerprediction error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 08:01:27 | DEBUG    | scrapers.social.telegram_scraper:204 — [Telegram] footballtipstoday: 0 tips found
+2026-05-15 08:01:29 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel freebettingtips1 error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 08:01:31 | DEBUG    | scrapers.social.telegram_scraper:204 — [Telegram] bettingtipsworld: 0 tips found
+2026-05-15 08:01:34 | DEBUG    | scrapers.social.telegram_scraper:204 — [Telegram] footballbettingtips: 0 tips found
+2026-05-15 08:01:36 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel sure9japredictions error: No user has "sure9japredictions" as username
+2026-05-15 08:01:38 | DEBUG    | scrapers.social.telegram_scraper:204 — [Telegram] naijabettingtips: 0 tips found
+2026-05-15 08:01:41 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel viptips247 error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 08:01:43 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel sportbettingtips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 08:01:45 | DEBUG    | scrapers.social.telegram_scraper:204 — [Telegram] dailyfootballtips: 0 tips found
+2026-05-15 08:01:47 | DEBUG    | scrapers.social.telegram_scraper:204 — [Telegram] footballpredictions: 0 tips found
+2026-05-15 08:01:50 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel surebettingtips error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 08:01:52 | DEBUG    | scrapers.social.telegram_scraper:204 — [Telegram] oddsvalue: 0 tips found
+2026-05-15 08:01:54 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel bettinganalysis error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 08:01:57 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel pronosticfoot error: No user has "pronosticfoot" as username
+2026-05-15 08:01:58 | INFO     | core.scheduler:122 — ⏰ [Scheduler] Autonomous: 333 unposted — broadcasting
+2026-05-15 08:01:58 | INFO     | telegram_bot.bot:184 — 📤 [TelegramBot] Posting top 5 of 333 predictions...
+2026-05-15 08:01:59 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 1/5: perry lakes hawks w vs warwick senators w (98.0%)
+2026-05-15 08:01:59 | DEBUG    | scrapers.social.telegram_scraper:204 — [Telegram] tipstersoccer: 0 tips found
+2026-05-15 08:02:01 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel betsmarter error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 08:02:03 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 2/5: artemisa vs matanzas (98.0%)
+2026-05-15 08:02:04 | WARNING  | scrapers.social.telegram_scraper:207 — [Telegram] channel footballedge error: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2026-05-15 08:02:06 | SUCCESS  | scrapers.social.telegram_scraper:232 — ✅ [Telegram] Total tips: 0
+2026-05-15 08:02:06 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ bluestacks (android) is DISABLED in scraper_config.json
+2026-05-15 08:02:06 | INFO     | core.orchestrator:177 —    ⏸  [android] bluestacks — DISABLED
+2026-05-15 08:02:06 | SUCCESS  | core.orchestrator:179 — ✅ [Orchestrator] Total tips collected: 182
+2026-05-15 08:02:07 | INFO     | core.orchestrator:239 — 💾 [Orchestrator] Stored 0 new tips
+2026-05-15 08:02:07 | INFO     | analyzer.engine:440 — 🧠 [Analysis] Processing 182 tips...
+2026-05-15 08:02:07 | DEBUG    | analyzer.engine:443 — [Analysis] Grouped into 168 unique matches
+2026-05-15 08:02:07 | SUCCESS  | analyzer.engine:454 — ✅ [Analysis] 168/168 matches passed threshold (min=45%)
+2026-05-15 08:02:07 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 3/5: st. paul vs columbus clippers (98.0%)
+2026-05-15 08:02:08 | INFO     | core.orchestrator:289 — 💾 [Orchestrator] Saved 168 fusion predictions
+2026-05-15 08:02:08 | WARNING  | telegram_bot.bot:169 — [TelegramBot] Broadcast already in progress — skipping
+2026-05-15 08:02:08 | SUCCESS  | core.orchestrator:334 — ✅ Pipeline done in 128.1s — 182 tips → 168 predictions → 168 posted
+2026-05-15 08:02:12 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 4/5: perry lakes hawks w vs warwick senators w (98.0%)
+2026-05-15 08:02:16 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 5/5: artemisa vs matanzas (98.0%)
+2026-05-15 08:02:16 | SUCCESS  | telegram_bot.bot:221 — ✅ [TelegramBot] Broadcast complete — 5 posted
+2026-05-15 08:06:58 | INFO     | core.scheduler:122 — ⏰ [Scheduler] Autonomous: 493 unposted — broadcasting
+2026-05-15 08:06:58 | INFO     | telegram_bot.bot:184 — 📤 [TelegramBot] Posting top 5 of 493 predictions...
+2026-05-15 08:07:04 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 1/5: st. paul vs columbus clippers (98.0%)
+2026-05-15 08:07:08 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 2/5: caimanes del llano vs sabios baloncesto (98.0%)
+2026-05-15 08:07:13 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 3/5: hobart chargers w vs dandenong rangers w (98.0%)
+2026-05-15 08:07:18 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 4/5: logan thunder w vs gold coast rollers w (98.0%)
+2026-05-15 08:07:22 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 5/5: northern tasmania w vs diamond valley w (98.0%)
+2026-05-15 08:07:22 | SUCCESS  | telegram_bot.bot:221 — ✅ [TelegramBot] Broadcast complete — 5 posted
+2026-05-15 08:11:58 | INFO     | core.scheduler:122 — ⏰ [Scheduler] Autonomous: 488 unposted — broadcasting
+2026-05-15 08:11:58 | INFO     | telegram_bot.bot:184 — 📤 [TelegramBot] Posting top 5 of 488 predictions...
+2026-05-15 08:11:59 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 1/5: perth redbacks w vs lakeside lightning w (98.0%)
+2026-05-15 08:12:03 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 2/5: perry lakes hawks w vs warwick senators w (98.0%)
+2026-05-15 08:12:09 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 3/5: artemisa vs matanzas (98.0%)
+2026-05-15 08:12:14 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 4/5: st. paul vs columbus clippers (98.0%)
+2026-05-15 08:12:19 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 5/5: bayern munich vs 1. fc köln (76.4%)
+2026-05-15 08:12:19 | SUCCESS  | telegram_bot.bot:221 — ✅ [TelegramBot] Broadcast complete — 5 posted
+2026-05-15 08:16:58 | INFO     | core.scheduler:122 — ⏰ [Scheduler] Autonomous: 483 unposted — broadcasting
+2026-05-15 08:16:58 | INFO     | telegram_bot.bot:184 — 📤 [TelegramBot] Posting top 5 of 483 predictions...
+2026-05-15 08:16:59 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 1/5: bayern munich vs 1. fc köln (76.4%)
+2026-05-15 08:17:03 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 2/5: eintracht frankfurt vs vfb stuttgart (74.5%)
+2026-05-15 08:17:08 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 3/5: eintracht frankfurt vs vfb stuttgart (74.5%)
+2026-05-15 08:17:12 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 4/5: borussia monchengladbach vs tsg hoffenheim (73.7%)
+2026-05-15 08:17:16 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 5/5: borussia monchengladbach vs tsg hoffenheim (73.7%)
+2026-05-15 08:17:16 | SUCCESS  | telegram_bot.bot:221 — ✅ [TelegramBot] Broadcast complete — 5 posted
+2026-05-15 08:21:58 | INFO     | core.scheduler:122 — ⏰ [Scheduler] Autonomous: 478 unposted — broadcasting
+2026-05-15 08:21:58 | INFO     | telegram_bot.bot:184 — 📤 [TelegramBot] Posting top 5 of 478 predictions...
+2026-05-15 08:22:01 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 1/5: fc st. pauli vs vfl wolfsburg (73.2%)
+2026-05-15 08:22:05 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 2/5: fc st. pauli vs vfl wolfsburg (73.2%)
+2026-05-15 08:22:09 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 3/5: piratas de quebradillas vs criollos de caguas (73.0%)
+2026-05-15 08:22:14 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 4/5: san german vs vaqueros de bayamon (73.0%)
+2026-05-15 08:22:18 | INFO     | telegram_bot.bot:208 — [TelegramBot] ✅ Posted 5/5: gigantes de carolina vs cangrejeros (73.0%)
+2026-05-15 08:22:18 | SUCCESS  | telegram_bot.bot:221 — ✅ [TelegramBot] Broadcast complete — 5 posted
+2026-05-15 08:26:58 | INFO     | core.scheduler:122 — ⏰ [Scheduler] Autonomous: 473 unposted — broadcasting
+2026-05-15 08:26:58 | INFO     | telegram_bot.bot:184 — 📤 [TelegramBot] Posting top 5 of 473 predictions...
+2026-05-15 08:26:58 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:27:03 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:27:08 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:27:17 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:27:22 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:27:27 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:27:36 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:27:41 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:27:46 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:27:55 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:28:00 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:28:05 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:28:14 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:28:19 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:28:24 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:28:29 | SUCCESS  | telegram_bot.bot:221 — ✅ [TelegramBot] Broadcast complete — 5 posted
+2026-05-15 08:31:58 | INFO     | core.scheduler:122 — ⏰ [Scheduler] Autonomous: 473 unposted — broadcasting
+2026-05-15 08:31:58 | INFO     | telegram_bot.bot:184 — 📤 [TelegramBot] Posting top 5 of 473 predictions...
+2026-05-15 08:31:58 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:32:03 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:32:08 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:32:17 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:32:22 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:32:27 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:32:36 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:32:41 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:32:46 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:32:55 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:33:00 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:33:05 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:33:14 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:33:19 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:33:24 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:33:29 | SUCCESS  | telegram_bot.bot:221 — ✅ [TelegramBot] Broadcast complete — 5 posted
+2026-05-15 08:36:58 | INFO     | core.scheduler:122 — ⏰ [Scheduler] Autonomous: 473 unposted — broadcasting
+2026-05-15 08:36:58 | INFO     | telegram_bot.bot:184 — 📤 [TelegramBot] Posting top 5 of 473 predictions...
+2026-05-15 08:36:58 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:37:03 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:37:08 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:37:17 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:37:22 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:37:27 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:37:36 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:37:41 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:37:46 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:37:55 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:38:00 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:38:05 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:38:14 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:38:19 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:38:24 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:38:29 | SUCCESS  | telegram_bot.bot:221 — ✅ [TelegramBot] Broadcast complete — 5 posted
+2026-05-15 08:41:58 | INFO     | core.scheduler:122 — ⏰ [Scheduler] Autonomous: 473 unposted — broadcasting
+2026-05-15 08:41:58 | INFO     | telegram_bot.bot:184 — 📤 [TelegramBot] Posting top 5 of 473 predictions...
+2026-05-15 08:41:58 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:42:03 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:42:08 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:42:17 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:42:22 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:42:27 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:42:36 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:42:41 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:42:46 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:42:55 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:43:00 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:43:05 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:43:14 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:43:19 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:43:24 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:43:29 | SUCCESS  | telegram_bot.bot:221 — ✅ [TelegramBot] Broadcast complete — 5 posted
+2026-05-15 08:46:58 | INFO     | core.scheduler:122 — ⏰ [Scheduler] Autonomous: 473 unposted — broadcasting
+2026-05-15 08:46:58 | INFO     | telegram_bot.bot:184 — 📤 [TelegramBot] Posting top 5 of 473 predictions...
+2026-05-15 08:46:58 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:47:03 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:47:08 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:47:17 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:47:22 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:47:27 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:47:36 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:47:41 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:47:46 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:47:55 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:48:00 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:48:05 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:48:14 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:48:19 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:48:24 | WARNING  | telegram_bot.bot:149 — [TelegramBot] Network error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-05-15 08:48:29 | SUCCESS  | telegram_bot.bot:221 — ✅ [TelegramBot] Broadcast complete — 5 posted
+2026-05-15 08:57:57 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-15 09:04:00 | INFO     | api.app:50 — 🚀 TipFusion AI starting up...
+2026-05-15 09:04:00 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-15 09:04:01 | INFO     | telegram_bot.bot:139 — ✅ [TelegramBot] Ready — channel -1003954198931
+2026-05-15 09:04:01 | INFO     | core.scheduler:98 — 📅 [Scheduler] All jobs registered
+2026-05-15 09:04:01 | SUCCESS  | core.scheduler:198 — ✅ [Scheduler] Started — all jobs active
+2026-05-15 09:04:01 | SUCCESS  | api.app:72 — ✅ TipFusion AI is live!
+2026-05-15 09:04:01 | INFO     | core.orchestrator:309 — ==================================================
+2026-05-15 09:04:01 | INFO     | core.orchestrator:310 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-15 09:04:01 | INFO     | core.orchestrator:311 — ==================================================
+2026-05-15 09:04:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ sportsgameodds (apis) is DISABLED in scraper_config.json
+2026-05-15 09:04:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ forebet (web) is DISABLED in scraper_config.json
+2026-05-15 09:04:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ predictz (web) is DISABLED in scraper_config.json
+2026-05-15 09:04:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ soccervista (web) is DISABLED in scraper_config.json
+2026-05-15 09:04:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ windrawwin (web) is DISABLED in scraper_config.json
+2026-05-15 09:04:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ telegram (social) is DISABLED in scraper_config.json
+2026-05-15 09:04:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ twitter (social) is DISABLED in scraper_config.json
+2026-05-15 09:04:01 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ reddit (social) is DISABLED in scraper_config.json
+2026-05-15 09:04:01 | INFO     | core.orchestrator:139 — 🚀 [Orchestrator] Running 2 API/web + 0 social scrapers
+2026-05-15 09:04:01 | INFO     | core.orchestrator:148 —    ⏸  [apis] sportsgameodds — DISABLED
+2026-05-15 09:04:01 | INFO     | core.orchestrator:148 —    ⏸  [web] forebet — DISABLED
+2026-05-15 09:04:01 | INFO     | core.orchestrator:148 —    ⏸  [web] predictz — DISABLED
+2026-05-15 09:04:01 | INFO     | core.orchestrator:148 —    ⏸  [web] soccervista — DISABLED
+2026-05-15 09:04:01 | INFO     | core.orchestrator:148 —    ⏸  [web] windrawwin — DISABLED
+2026-05-15 09:04:01 | INFO     | core.orchestrator:148 —    ⏸  [social] telegram — DISABLED
+2026-05-15 09:04:01 | INFO     | core.orchestrator:148 —    ⏸  [social] twitter — DISABLED
+2026-05-15 09:04:01 | INFO     | core.orchestrator:148 —    ⏸  [social] reddit — DISABLED
+2026-05-15 09:04:01 | INFO     | core.orchestrator:148 —    ⏸  [android] bluestacks — DISABLED
+2026-05-15 09:04:01 | INFO     | scrapers.base:186 — 🔍 [API-Football] Starting scrape...
+2026-05-15 09:04:01 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-15 09:04:03 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_epl: 10 events
+2026-05-15 09:04:05 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_spain_la_liga: 10 events
+2026-05-15 09:04:09 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_germany_bundesliga: 9 events
+2026-05-15 09:04:12 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_italy_serie_a: 10 events
+2026-05-15 09:04:14 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_france_ligue_one: 9 events
+2026-05-15 09:04:16 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_champs_league: 1 events
+2026-05-15 09:04:18 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_europa_league: 1 events
+2026-05-15 09:04:20 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_africa_cup_of_nations: 0 events
+2026-05-15 09:04:20 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 15 tips in 19.2s
+2026-05-15 09:04:35 | INFO     | scrapers.apis.api_football:237 — [API-Football] ⚽ 6 football tips
+2026-05-15 09:04:39 | INFO     | scrapers.apis.api_football:241 — [API-NBA] 🏀 0 NBA tips
+2026-05-15 09:04:43 | INFO     | scrapers.apis.api_football:245 — [API-Basketball] 🏀 0 basketball tips
+2026-05-15 09:04:48 | INFO     | scrapers.apis.api_football:249 — [API-Baseball] ⚾ 0 baseball tips
+2026-05-15 09:04:48 | SUCCESS  | scrapers.base:190 — ✅ [API-Football] Found 6 tips in 46.4s
+2026-05-15 09:04:48 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ bluestacks (android) is DISABLED in scraper_config.json
+2026-05-15 09:04:48 | INFO     | core.orchestrator:177 —    ⏸  [android] bluestacks — DISABLED
+2026-05-15 09:04:48 | SUCCESS  | core.orchestrator:179 — ✅ [Orchestrator] Total tips collected: 21
+2026-05-15 09:04:48 | INFO     | core.orchestrator:239 — 💾 [Orchestrator] Stored 1 new tips
+2026-05-15 09:04:48 | INFO     | analyzer.engine:440 — 🧠 [Analysis] Processing 21 tips...
+2026-05-15 09:04:48 | DEBUG    | analyzer.engine:443 — [Analysis] Grouped into 15 unique matches
+2026-05-15 09:04:48 | SUCCESS  | analyzer.engine:454 — ✅ [Analysis] 15/15 matches passed threshold (min=45%)
+2026-05-15 09:04:48 | INFO     | core.orchestrator:289 — 💾 [Orchestrator] Saved 15 fusion predictions
+2026-05-15 09:04:48 | INFO     | telegram_bot.bot:205 — 📤 [TelegramBot] Posting 5 football tips...
+2026-05-15 09:04:48 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 1/5: bayern munich vs 1. fc köln (76.4%)
+2026-05-15 09:04:51 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 2/5: bayer leverkusen vs hamburger sv (74.7%)
+2026-05-15 09:04:53 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 3/5: eintracht frankfurt vs vfb stuttgart (74.5%)
+2026-05-15 09:04:56 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 4/5: borussia monchengladbach vs tsg hoffenheim (73.7%)
+2026-05-15 09:04:59 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 5/5: fc st. pauli vs vfl wolfsburg (73.2%)
+2026-05-15 09:04:59 | SUCCESS  | telegram_bot.bot:232 — ✅ [TelegramBot] Done — 5 football tips posted
+2026-05-15 09:04:59 | SUCCESS  | core.orchestrator:334 — ✅ Pipeline done in 57.5s — 21 tips → 15 predictions → 15 posted
+2026-05-15 21:13:54 | INFO     | api.app:50 — 🚀 TipFusion AI starting up...
+2026-05-15 21:13:54 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-15 21:13:55 | INFO     | telegram_bot.bot:139 — ✅ [TelegramBot] Ready — channel -1003954198931
+2026-05-15 21:13:55 | INFO     | core.scheduler:98 — 📅 [Scheduler] All jobs registered
+2026-05-15 21:13:55 | SUCCESS  | core.scheduler:198 — ✅ [Scheduler] Started — all jobs active
+2026-05-15 21:13:55 | SUCCESS  | api.app:72 — ✅ TipFusion AI is live!
+2026-05-15 21:13:55 | INFO     | core.orchestrator:303 — ==================================================
+2026-05-15 21:13:55 | INFO     | core.orchestrator:304 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-15 21:13:55 | INFO     | core.orchestrator:305 — ==================================================
+2026-05-15 21:13:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ sportsgameodds (apis) is DISABLED in scraper_config.json
+2026-05-15 21:13:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ forebet (web) is DISABLED in scraper_config.json
+2026-05-15 21:13:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ predictz (web) is DISABLED in scraper_config.json
+2026-05-15 21:13:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ soccervista (web) is DISABLED in scraper_config.json
+2026-05-15 21:13:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ windrawwin (web) is DISABLED in scraper_config.json
+2026-05-15 21:13:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ telegram (social) is DISABLED in scraper_config.json
+2026-05-15 21:13:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ twitter (social) is DISABLED in scraper_config.json
+2026-05-15 21:13:55 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ reddit (social) is DISABLED in scraper_config.json
+2026-05-15 21:13:55 | INFO     | core.orchestrator:139 — 🚀 [Orchestrator] Running 2 API/web + 0 social scrapers
+2026-05-15 21:13:55 | INFO     | core.orchestrator:148 —    ⏸  [apis] sportsgameodds — DISABLED
+2026-05-15 21:13:55 | INFO     | core.orchestrator:148 —    ⏸  [web] forebet — DISABLED
+2026-05-15 21:13:55 | INFO     | core.orchestrator:148 —    ⏸  [web] predictz — DISABLED
+2026-05-15 21:13:55 | INFO     | core.orchestrator:148 —    ⏸  [web] soccervista — DISABLED
+2026-05-15 21:13:55 | INFO     | core.orchestrator:148 —    ⏸  [web] windrawwin — DISABLED
+2026-05-15 21:13:55 | INFO     | core.orchestrator:148 —    ⏸  [social] telegram — DISABLED
+2026-05-15 21:13:55 | INFO     | core.orchestrator:148 —    ⏸  [social] twitter — DISABLED
+2026-05-15 21:13:55 | INFO     | core.orchestrator:148 —    ⏸  [social] reddit — DISABLED
+2026-05-15 21:13:55 | INFO     | core.orchestrator:148 —    ⏸  [android] bluestacks — DISABLED
+2026-05-15 21:13:55 | INFO     | scrapers.base:186 — 🔍 [API-Football] Starting scrape...
+2026-05-15 21:13:55 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-15 21:13:58 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_epl: 10 events
+2026-05-15 21:13:59 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_spain_la_liga: 10 events
+2026-05-15 21:14:00 | DEBUG    | scrapers.apis.api_football:139 — [API-Football] 40 fixtures in monitored leagues
+2026-05-15 21:14:01 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_germany_bundesliga: 9 events
+2026-05-15 21:14:03 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_italy_serie_a: 10 events
+2026-05-15 21:14:04 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_france_ligue_one: 9 events
+2026-05-15 21:14:06 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_champs_league: 1 events
+2026-05-15 21:14:08 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_europa_league: 1 events
+2026-05-15 21:14:09 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_africa_cup_of_nations: 0 events
+2026-05-15 21:14:09 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 63 tips in 13.8s
+2026-05-15 21:14:20 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1388609: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1388609')
+2026-05-15 21:14:21 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1388608: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1388608')
+2026-05-15 21:14:35 | INFO     | scrapers.apis.api_football:274 — [API-Football] ⚽ 10 football tips
+2026-05-15 21:14:39 | INFO     | scrapers.apis.api_football:286 — [API-Football] 🏀 NBA 0 tips
+2026-05-15 21:14:39 | INFO     | scrapers.apis.api_football:286 — [API-Football] 🏀 Basketball 10 tips
+2026-05-15 21:14:39 | INFO     | scrapers.apis.api_football:286 — [API-Football] ⚾ Baseball 10 tips
+2026-05-15 21:14:39 | SUCCESS  | scrapers.base:190 — ✅ [API-Football] Found 30 tips in 43.8s
+2026-05-15 21:14:39 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ bluestacks (android) is DISABLED in scraper_config.json
+2026-05-15 21:14:39 | INFO     | core.orchestrator:171 —    ⏸  [android] bluestacks — DISABLED
+2026-05-15 21:14:39 | SUCCESS  | core.orchestrator:173 — ✅ [Orchestrator] Total tips collected: 93
+2026-05-15 21:14:40 | INFO     | core.orchestrator:233 — 💾 [Orchestrator] Stored 50 new tips
+2026-05-15 21:14:40 | INFO     | analyzer.engine:440 — 🧠 [Analysis] Processing 93 tips...
+2026-05-15 21:14:40 | DEBUG    | analyzer.engine:443 — [Analysis] Grouped into 72 unique matches
+2026-05-15 21:14:40 | SUCCESS  | analyzer.engine:454 — ✅ [Analysis] 72/72 matches passed threshold (min=45%)
+2026-05-15 21:14:40 | INFO     | core.orchestrator:283 — 💾 [Orchestrator] Saved 72 fusion predictions
+2026-05-15 21:14:40 | INFO     | telegram_bot.bot:205 — 📤 [TelegramBot] Posting 20 football tips...
+2026-05-15 21:14:43 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 1/20: internazionale vs hellas verona (87.5%)
+2026-05-15 21:14:45 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 2/20: pisa vs napoli (81.6%)
+2026-05-15 21:14:47 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 3/20: as roma vs lazio (77.1%)
+2026-05-15 21:14:49 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 4/20: bayern munich vs 1. fc köln (76.8%)
+2026-05-15 21:14:51 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 5/20: paris fc vs paris saint germain (76.4%)
+2026-05-15 21:14:52 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 6/20: eintracht frankfurt vs vfb stuttgart (74.6%)
+2026-05-15 21:14:54 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 7/20: manchester united vs nottingham forest (74.5%)
+2026-05-15 21:14:55 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 8/20: juventus vs fiorentina (74.5%)
+2026-05-15 21:14:56 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 9/20: nice vs metz (74.5%)
+2026-05-15 21:14:57 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 10/20: barcelona vs real betis (74.1%)
+2026-05-15 21:14:59 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 11/20: atalanta bc vs bologna (73.8%)
+2026-05-15 21:15:00 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 12/20: brentford vs crystal palace (73.7%)
+2026-05-15 21:15:02 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 13/20: como vs parma (73.7%)
+2026-05-15 21:15:03 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 14/20: fc st. pauli vs vfl wolfsburg (73.3%)
+2026-05-15 21:15:04 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 15/20: lille vs auxerre (73.1%)
+2026-05-15 21:15:06 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 16/20: piratas de quebradillas vs criollos de caguas (73.0%)
+2026-05-15 21:15:08 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 17/20: san german vs vaqueros de bayamon (73.0%)
+2026-05-15 21:15:10 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 18/20: gigantes de carolina vs cangrejeros (73.0%)
+2026-05-15 21:15:11 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 19/20: indios de mayaguez vs capitanes de arecibo (73.0%)
+2026-05-15 21:15:12 | INFO     | telegram_bot.bot:222 — [TelegramBot] ✅ 20/20: reales de la vega vs marineros (73.0%)
+2026-05-15 21:15:12 | SUCCESS  | telegram_bot.bot:232 — ✅ [TelegramBot] Done — 20 football tips posted
+2026-05-15 21:15:12 | SUCCESS  | core.orchestrator:328 — ✅ Pipeline done in 76.8s — 93 tips → 72 predictions → 72 posted
+2026-05-15 21:23:01 | INFO     | api.app:76 — 🔻 TipFusion AI shutting down...
+2026-05-15 21:23:01 | INFO     | core.scheduler:202 — [Scheduler] Stopped
+2026-05-15 21:23:01 | INFO     | api.app:81 — 👋 Shutdown complete
+2026-05-15 21:30:44 | INFO     | api.app:50 — 🚀 TipFusion AI starting up...
+2026-05-15 21:30:44 | INFO     | database.connection:33 — ✅ Database initialized
+2026-05-15 21:30:45 | INFO     | telegram_bot.bot:139 — ✅ [TelegramBot] Ready — channel -1003954198931
+2026-05-15 21:30:45 | INFO     | core.scheduler:98 — 📅 [Scheduler] All jobs registered
+2026-05-15 21:30:45 | SUCCESS  | core.scheduler:198 — ✅ [Scheduler] Started — all jobs active
+2026-05-15 21:30:45 | SUCCESS  | api.app:72 — ✅ TipFusion AI is live!
+2026-05-15 21:30:45 | INFO     | core.orchestrator:303 — ==================================================
+2026-05-15 21:30:45 | INFO     | core.orchestrator:304 — 🔄 [Orchestrator] FULL PIPELINE STARTED
+2026-05-15 21:30:45 | INFO     | core.orchestrator:305 — ==================================================
+2026-05-15 21:30:45 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ sportsgameodds (apis) is DISABLED in scraper_config.json
+2026-05-15 21:30:45 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ forebet (web) is DISABLED in scraper_config.json
+2026-05-15 21:30:45 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ predictz (web) is DISABLED in scraper_config.json
+2026-05-15 21:30:45 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ soccervista (web) is DISABLED in scraper_config.json
+2026-05-15 21:30:45 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ windrawwin (web) is DISABLED in scraper_config.json
+2026-05-15 21:30:45 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ telegram (social) is DISABLED in scraper_config.json
+2026-05-15 21:30:45 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ twitter (social) is DISABLED in scraper_config.json
+2026-05-15 21:30:45 | INFO     | core.scraper_config:32 — [ScraperConfig] ⏸ reddit (social) is DISABLED in scraper_config.json
+2026-05-15 21:30:45 | INFO     | core.orchestrator:139 — 🚀 [Orchestrator] Running 2 API/web + 0 social scrapers
+2026-05-15 21:30:45 | INFO     | core.orchestrator:148 —    ⏸  [apis] sportsgameodds — DISABLED
+2026-05-15 21:30:45 | INFO     | core.orchestrator:148 —    ⏸  [web] forebet — DISABLED
+2026-05-15 21:30:45 | INFO     | core.orchestrator:148 —    ⏸  [web] predictz — DISABLED
+2026-05-15 21:30:45 | INFO     | core.orchestrator:148 —    ⏸  [web] soccervista — DISABLED
+2026-05-15 21:30:45 | INFO     | core.orchestrator:148 —    ⏸  [web] windrawwin — DISABLED
+2026-05-15 21:30:45 | INFO     | core.orchestrator:148 —    ⏸  [social] telegram — DISABLED
+2026-05-15 21:30:45 | INFO     | core.orchestrator:148 —    ⏸  [social] twitter — DISABLED
+2026-05-15 21:30:45 | INFO     | core.orchestrator:148 —    ⏸  [social] reddit — DISABLED
+2026-05-15 21:30:45 | INFO     | scrapers.base:186 — 🔍 [API-Football] Starting scrape...
+2026-05-15 21:30:45 | INFO     | scrapers.base:186 — 🔍 [TheOddsAPI] Starting scrape...
+2026-05-15 21:30:48 | DEBUG    | scrapers.apis.api_football:139 — [API-Football] 40 fixtures in monitored leagues
+2026-05-15 21:30:48 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_epl: 10 events
+2026-05-15 21:30:50 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_spain_la_liga: 10 events
+2026-05-15 21:30:51 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_germany_bundesliga: 9 events
+2026-05-15 21:30:53 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_italy_serie_a: 10 events
+2026-05-15 21:30:54 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_france_ligue_one: 9 events
+2026-05-15 21:30:56 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_champs_league: 1 events
+2026-05-15 21:30:57 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_uefa_europa_league: 1 events
+2026-05-15 21:30:58 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1394736: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1394736')
+2026-05-15 21:30:58 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1436206: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1436206')
+2026-05-15 21:30:58 | DEBUG    | scrapers.apis.odds_api:220 — [OddsAPI] soccer_africa_cup_of_nations: 0 events
+2026-05-15 21:30:58 | SUCCESS  | scrapers.base:190 — ✅ [TheOddsAPI] Found 64 tips in 13.1s
+2026-05-15 21:30:59 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1436200: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1436200')
+2026-05-15 21:31:10 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1536959: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1536959')
+2026-05-15 21:31:11 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1379330: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1379330')
+2026-05-15 21:31:12 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1544972: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1544972')
+2026-05-15 21:31:24 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1388607: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1388607')
+2026-05-15 21:31:25 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1388605: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1388605')
+2026-05-15 21:31:25 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1388606: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1388606')
+2026-05-15 21:31:37 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1388609: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1388609')
+2026-05-15 21:31:38 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1388610: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1388610')
+2026-05-15 21:31:38 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1388608: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1388608')
+2026-05-15 21:31:50 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1388613: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1388613')
+2026-05-15 21:31:50 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1388611: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1388611')
+2026-05-15 21:31:51 | WARNING  | scrapers.apis.api_football:64 — [API-Football] prediction error fx=1388612: 429, message='Too Many Requests', url=URL('https://v3.football.api-sports.io/predictions?fixture=1388612')
+2026-05-15 21:31:51 | INFO     | scrapers.apis.api_football:274 — [API-Football] ⚽ 0 football tips
+2026-05-15 21:31:54 | INFO     | scrapers.apis.api_football:286 — [API-Football] 🏀 NBA 0 tips
+2026-05-15 21:31:54 | INFO     | scrapers.apis.api_football:286 — [API-Football] 🏀 Basketball 10 tips
+2026-05-15 21:31:54 | INFO     | scrapers.apis.api_football:286 — [API-Football] ⚾ Baseball 10 tips
+2026-05-15 21:31:54 | SUCCESS  | scrapers.base:190 — ✅ [API-Football] Found 20 tips in 69.3s
+2026-05-15 21:31:57 | INFO     | android.bluestacks:532 — 🤖 [BlueStacks] Starting Android scraping session...
+2026-05-15 21:31:57 | INFO     | android.bluestacks:474 — [BlueStacks] Launching: C:/Program Files/BlueStacks_nxt/HD-Player.exe
+2026-05-15 21:32:10 | ERROR    | android.bluestacks:107 — ❌ [ADB] Connection failed: * daemon not running; starting now at tcp:5037
+* daemon started successfully
+2026-05-15 21:32:13 | INFO     | android.bluestacks:105 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-15 21:32:16 | INFO     | android.bluestacks:105 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-15 21:32:19 | INFO     | android.bluestacks:105 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-15 21:32:23 | INFO     | android.bluestacks:105 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-15 21:32:23 | SUCCESS  | android.bluestacks:481 — ✅ [BlueStacks] Android booted and ADB connected
+2026-05-15 21:32:27 | INFO     | android.bluestacks:105 — ✅ [ADB] Connected to 127.0.0.1:5555
+2026-05-15 21:32:32 | INFO     | android.bluestacks:345 — 📱 [Android] Scraping TipsPro AI...
+2026-05-15 21:32:32 | DEBUG    | android.bluestacks:125 — [ADB] Launched com.tipspro.android
+2026-05-15 21:32:39 | DEBUG    | android.bluestacks:371 — [Android] TipsPro AI scroll 0: 0 tips
+2026-05-15 21:32:53 | DEBUG    | android.bluestacks:371 — [Android] TipsPro AI scroll 1: 0 tips
+2026-05-15 21:32:57 | DEBUG    | android.bluestacks:371 — [Android] TipsPro AI scroll 2: 0 tips
+2026-05-15 21:33:02 | DEBUG    | android.bluestacks:371 — [Android] TipsPro AI scroll 3: 0 tips
+2026-05-15 21:33:07 | DEBUG    | android.bluestacks:371 — [Android] TipsPro AI scroll 4: 0 tips
+2026-05-15 21:33:08 | SUCCESS  | android.bluestacks:381 — ✅ [Android] TipsPro AI: 0 tips scraped
+2026-05-15 21:33:12 | INFO     | android.bluestacks:345 — 📱 [Android] Scraping AI Betting Tips...
+2026-05-15 21:33:12 | DEBUG    | android.bluestacks:125 — [ADB] Launched com.aibettingtips.app
+2026-05-15 21:33:21 | DEBUG    | android.bluestacks:371 — [Android] AI Betting Tips scroll 0: 0 tips
+2026-05-15 21:33:26 | DEBUG    | android.bluestacks:371 — [Android] AI Betting Tips scroll 1: 0 tips
+2026-05-15 21:33:30 | DEBUG    | android.bluestacks:371 — [Android] AI Betting Tips scroll 2: 0 tips
+2026-05-15 21:33:35 | DEBUG    | android.bluestacks:371 — [Android] AI Betting Tips scroll 3: 0 tips
+2026-05-15 21:33:41 | DEBUG    | android.bluestacks:371 — [Android] AI Betting Tips scroll 4: 0 tips
+2026-05-15 21:33:42 | SUCCESS  | android.bluestacks:381 — ✅ [Android] AI Betting Tips: 0 tips scraped
+2026-05-15 21:33:46 | INFO     | android.bluestacks:345 — 📱 [Android] Scraping Betting Tips AI...
+2026-05-15 21:33:46 | DEBUG    | android.bluestacks:125 — [ADB] Launched com.bettingpredictions.ai
+2026-05-15 21:33:53 | DEBUG    | android.bluestacks:371 — [Android] Betting Tips AI scroll 0: 0 tips
+2026-05-15 21:33:58 | DEBUG    | android.bluestacks:371 — [Android] Betting Tips AI scroll 1: 0 tips
+2026-05-15 21:34:02 | DEBUG    | android.bluestacks:371 — [Android] Betting Tips AI scroll 2: 0 tips
+2026-05-15 21:34:07 | DEBUG    | android.bluestacks:371 — [Android] Betting Tips AI scroll 3: 0 tips
+2026-05-15 21:34:12 | DEBUG    | android.bluestacks:371 — [Android] Betting Tips AI scroll 4: 0 tips
+2026-05-15 21:34:13 | SUCCESS  | android.bluestacks:381 — ✅ [Android] Betting Tips AI: 0 tips scraped
+2026-05-15 21:34:17 | INFO     | android.bluestacks:345 — 📱 [Android] Scraping SportyBet...
+2026-05-15 21:34:17 | DEBUG    | android.bluestacks:125 — [ADB] Launched com.sportybet.android.gp
+2026-05-15 21:34:24 | DEBUG    | android.bluestacks:371 — [Android] SportyBet scroll 0: 0 tips
+2026-05-15 21:34:29 | DEBUG    | android.bluestacks:371 — [Android] SportyBet scroll 1: 0 tips
+2026-05-15 21:34:34 | DEBUG    | android.bluestacks:371 — [Android] SportyBet scroll 2: 0 tips
+2026-05-15 21:34:39 | DEBUG    | android.bluestacks:371 — [Android] SportyBet scroll 3: 0 tips
+2026-05-15 21:34:43 | DEBUG    | android.bluestacks:371 — [Android] SportyBet scroll 4: 0 tips
+2026-05-15 21:34:44 | SUCCESS  | android.bluestacks:381 — ✅ [Android] SportyBet: 0 tips scraped
+2026-05-15 21:34:48 | SUCCESS  | android.bluestacks:527 — ✅ [BlueStacks] Total from all apps: 0 tips
+2026-05-15 21:34:48 | SUCCESS  | core.orchestrator:173 — ✅ [Orchestrator] Total tips collected: 84
+2026-05-15 21:34:48 | INFO     | core.orchestrator:233 — 💾 [Orchestrator] Stored 1 new tips
+2026-05-15 21:34:48 | INFO     | analyzer.engine:440 — 🧠 [Analysis] Processing 84 tips...
+2026-05-15 21:34:48 | DEBUG    | analyzer.engine:443 — [Analysis] Grouped into 65 unique matches
+2026-05-15 21:34:48 | SUCCESS  | analyzer.engine:454 — ✅ [Analysis] 65/65 matches passed threshold (min=45%)
+2026-05-15 21:34:49 | INFO     | core.orchestrator:283 — 💾 [Orchestrator] Saved 65 fusion predictions
+2026-05-15 21:34:49 | INFO     | telegram_bot.bot:223 — 📤 [TelegramBot] Broadcasting 63 predictions + slips...
+2026-05-15 21:34:50 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 1/63: internazionale vs hellas verona (87.5%)
+2026-05-15 21:34:51 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 2/63: pisa vs napoli (81.6%)
+2026-05-15 21:34:52 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 3/63: as roma vs lazio (77.1%)
+2026-05-15 21:34:52 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 4/63: bayern munich vs 1. fc köln (76.8%)
+2026-05-15 21:34:56 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 5/63: paris fc vs paris saint germain (76.4%)
+2026-05-15 21:34:59 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 6/63: bayer leverkusen vs hamburger sv (75.2%)
+2026-05-15 21:35:00 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 7/63: manchester united vs nottingham forest (74.6%)
+2026-05-15 21:35:01 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 8/63: eintracht frankfurt vs vfb stuttgart (74.6%)
+2026-05-15 21:35:01 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 9/63: juventus vs fiorentina (74.5%)
+2026-05-15 21:35:02 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 10/63: nice vs metz (74.5%)
+2026-05-15 21:35:03 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 11/63: barcelona vs real betis (74.1%)
+2026-05-15 21:35:03 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 12/63: atalanta bc vs bologna (73.8%)
+2026-05-15 21:35:04 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 13/63: brentford vs crystal palace (73.7%)
+2026-05-15 21:35:08 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 14/63: como vs parma (73.7%)
+2026-05-15 21:35:09 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 15/63: fc st. pauli vs vfl wolfsburg (73.3%)
+2026-05-15 21:35:10 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 16/63: aston villa vs liverpool (73.2%)
+2026-05-15 21:35:11 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 17/63: lille vs auxerre (73.1%)
+2026-05-15 21:35:12 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 18/63: piratas de quebradillas vs criollos de caguas (73.0%)
+2026-05-15 21:35:16 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 19/63: san german vs vaqueros de bayamon (73.0%)
+2026-05-15 21:35:16 | WARNING  | telegram_bot.bot:157 — [TelegramBot] Flood — waiting 35s
+2026-05-15 21:35:53 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 20/63: gigantes de carolina vs cangrejeros (73.0%)
+2026-05-15 21:35:53 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 21/63: indios de mayaguez vs capitanes de arecibo (73.0%)
+2026-05-15 21:35:54 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 22/63: reales de la vega vs marineros (73.0%)
+2026-05-15 21:35:55 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 23/63: instituto de cordoba vs quimsa (73.0%)
+2026-05-15 21:35:56 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 24/63: titanes del licey vs leones (73.0%)
+2026-05-15 21:36:00 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 25/63: espanol osorno vs valdivia (73.0%)
+2026-05-15 21:36:01 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 26/63: caimanes del llano vs sabios baloncesto (73.0%)
+2026-05-15 21:36:02 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 27/63: leeds united vs brighton and hove albion (72.9%)
+2026-05-15 21:36:03 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 28/63: atlético madrid vs girona (72.9%)
+2026-05-15 21:36:04 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 29/63: lyon vs rc lens (72.9%)
+2026-05-15 21:36:05 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 30/63: rayo vallecano vs villarreal (72.6%)
+2026-05-15 21:36:06 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 31/63: sevilla vs real madrid (72.6%)
+2026-05-15 21:36:07 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 32/63: wolverhampton wanderers vs fulham (72.5%)
+2026-05-15 21:36:09 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 33/63: genoa vs milan (72.5%)
+2026-05-15 21:36:09 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 34/63: salt lake bees vs el paso chihuahuas (72.4%)
+2026-05-15 21:36:13 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 35/63: puebla vs bravos de leon (72.4%)
+2026-05-15 21:36:14 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 36/63: campeche vs yucatan (72.4%)
+2026-05-15 21:36:15 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 37/63: caliente de durango vs monclova (72.4%)
+2026-05-15 21:36:16 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 38/63: tabasco vs diablos rojos (72.4%)
+2026-05-15 21:36:17 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 39/63: saltillo vs jalisco (72.4%)
+2026-05-15 21:36:17 | WARNING  | telegram_bot.bot:157 — [TelegramBot] Flood — waiting 36s
+2026-05-15 21:36:54 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 40/63: monterrey vs aguascalientes (72.4%)
+2026-05-15 21:36:55 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 41/63: laguna vs dos laredos (72.4%)
+2026-05-15 21:36:56 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 42/63: tacoma rainiers vs sugar land (72.4%)
+2026-05-15 21:36:57 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 43/63: borussia monchengladbach vs tsg hoffenheim (72.4%)
+2026-05-15 21:36:58 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 44/63: everton vs sunderland (71.4%)
+2026-05-15 21:37:02 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 45/63: brest vs angers (71.2%)
+2026-05-15 21:37:03 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 46/63: 1. fc heidenheim vs fsv mainz 05 (69.8%)
+2026-05-15 21:37:03 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 47/63: oviedo vs alavés (69.4%)
+2026-05-15 21:37:04 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 48/63: werder bremen vs borussia dortmund (68.2%)
+2026-05-15 21:37:06 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 49/63: marseille vs rennes (68.1%)
+2026-05-15 21:37:07 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 50/63: ca osasuna vs espanyol (67.1%)
+2026-05-15 21:37:09 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 51/63: levante vs mallorca (66.5%)
+2026-05-15 21:37:10 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 52/63: newcastle united vs west ham united (66.4%)
+2026-05-15 21:37:11 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 53/63: athletic bilbao vs celta vigo (66.3%)
+2026-05-15 21:37:11 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 54/63: strasbourg vs as monaco (66.3%)
+2026-05-15 21:37:15 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 55/63: real sociedad vs valencia (66.2%)
+2026-05-15 21:37:16 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 56/63: elche cf vs getafe (65.1%)
+2026-05-15 21:37:17 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 57/63: cagliari vs torino (64.3%)
+2026-05-15 21:37:18 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 58/63: udinese vs cremonese (63.9%)
+2026-05-15 21:37:18 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 59/63: union berlin vs augsburg (63.5%)
+2026-05-15 21:37:20 | WARNING  | telegram_bot.bot:157 — [TelegramBot] Flood — waiting 35s
+2026-05-15 21:37:55 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 60/63: sc freiburg vs rb leipzig (63.5%)
+2026-05-15 21:37:56 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 61/63: nantes vs toulouse (62.3%)
+2026-05-15 21:37:57 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 62/63: lorient vs le havre (61.9%)
+2026-05-15 21:37:57 | INFO     | telegram_bot.bot:249 — [TelegramBot] ✅ 63/63: sassuolo vs lecce (61.2%)
+2026-05-15 21:37:58 | INFO     | telegram_bot.slip_builder:190 — [SlipBuilder] LOW RISK: 10 games, combined odds 304.57
+2026-05-15 21:37:58 | INFO     | telegram_bot.slip_builder:190 — [SlipBuilder] HIGH RISK: 18 games, combined odds 4451705.08
+2026-05-15 21:38:03 | SUCCESS  | telegram_bot.bot:279 — ✅ [SlipBuilder] LOW RISK: 10 games, odds 304.57
+2026-05-15 21:38:05 | SUCCESS  | telegram_bot.bot:295 — ✅ [SlipBuilder] HIGH RISK: 18 games, odds 4451705.08
+2026-05-15 21:38:05 | SUCCESS  | telegram_bot.bot:306 — ✅ [TelegramBot] Full broadcast done — 63 tips + 2 slips posted
+2026-05-15 21:38:05 | SUCCESS  | core.orchestrator:328 — ✅ Pipeline done in 440.1s — 84 tips → 65 predictions → 65 posted
